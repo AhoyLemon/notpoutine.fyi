@@ -1,0 +1,259 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+html,
+body {
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block; }
+
+b,
+strong {
+  font-weight: bold; }
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic; }
+
+ul,
+ol {
+  list-style: none; }
+
+li {
+  display: list-item; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left; }
+
+q {
+  quotes: none; }
+
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+sub,
+sup,
+small {
+  font-size: 75%; }
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+svg {
+  overflow: hidden; }
+
+a {
+  text-decoration: none;
+  color: #4885ed; }
+  a:hover {
+    border-bottom: 0.05em solid currentColor; }
+
+[v-cloak] {
+  display: none !important; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.17rem; }
+
+h4 {
+  font-size: 1.12rem; }
+
+h5 {
+  font-size: .83rem; }
+
+h6 {
+  font-size: .75rem; }
+
+body {
+  background: #eee;
+  color: #212121;
+  font-family: "EB Garamond", serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ed213a), to(#93291e));
+  background: -webkit-linear-gradient(top, #ed213a, #93291e);
+  background: -o-linear-gradient(top, #ed213a, #93291e);
+  background: linear-gradient(to bottom, #ed213a, #93291e);
+  background-attachment: fixed; }
+
+.crimes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px; }
+  .crimes .crime {
+    background: #eee;
+    font-size: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.2); }
+    .crimes .crime figure {
+      background-size: cover;
+      height: 16vw;
+      background-position: center; }
+  .crimes .name-and-price {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 110px;
+    grid-template-columns: 1fr 110px;
+    gap: 20px;
+    padding: 20px; }
+    .crimes .name-and-price .price {
+      font-size: 160%;
+      text-align: right; }
+  .crimes figcaption {
+    padding: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1fr; }
+    .crimes figcaption p:before {
+      content: '“'; }
+    .crimes figcaption p:after {
+      content: '”'; }
+    .crimes figcaption .requirements li.yes:before {
+      content: '✔️';
+      padding-right: 0.5em; }
+    .crimes figcaption .requirements li.no:before {
+      content: '❌';
+      padding-right: 0.5em;
+      text-decoration: none; }
+  .crimes .location {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px; }

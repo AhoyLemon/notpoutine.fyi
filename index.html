@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i&amp;display=swap" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta http-equiv="last-modified" content="2019-10-27@18:43:47">
+  </head>
+  <body>
+    <div id="app" v-cloak>
+      <main class="crimes">
+        <article class="crime" v-for="crime in crimes">
+          <header class="name-and-price">
+            <h1>{{crime.name}}</h1>
+            <div class="price">$ {{crime.price}} </div>
+          </header>
+          <figure v-bind:style="{ backgroundImage: 'url(img/crimes/'+crime.pic+')' }">
+            <!--img(:src="'img/crimes/'+crime.pic")-->
+          </figure>
+          <figcaption>
+            <p>{{crime.description}}</p>
+            <ul class="requirements">
+              <li class="yes" v-if="crime.requirements.fries">fries</li>
+              <li class="no" v-if="!crime.requirements.fries">fries</li>
+              <li class="yes" v-if="crime.requirements.curds">curds</li>
+              <li class="no" v-if="!crime.requirements.curds">curds</li>
+              <li class="yes" v-if="crime.requirements.gravy">gravy</li>
+              <li class="no" v-if="!crime.requirements.gravy">gravy</li>
+            </ul>
+          </figcaption>
+          <div class="location">
+            <div class="name">{{crime.place}}</div>
+            <div class="region" v-if="crime.city &amp;&amp; crime.state"><span class="city">{{crime.city}}, </span><span class="state">{{crime.state}}</span></div>
+            <div class="region" v-else-if="crime.city &amp;&amp; crime.country"><span class="city">{{crime.city}}, </span><span class="country">{{crime.country}}</span></div>
+          </div>
+        </article>
+      </main>
+    </div>
+    <div class="javascripts">
+      <script src="js/libraries/vue.full.js"></script>
+      <script>const testing = true;</script>
+      <script src="js/min/site.min.js?updated2019-10-27@18:43:47"></script>
+    </div>
+  </body>
+</html>
