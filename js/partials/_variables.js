@@ -1,6 +1,24 @@
 const siteURL = "";
 
 const crimes = [
+
+  {
+    name: "Playoff Poutine",
+    place: "Lambeau Field",
+    pic: "playoff-poutine.jpg",
+    city: "Green Bay",
+    state: "WI",
+    country: "US",
+    map: "https://goo.gl/maps/igBWK8kwuwEp8AFz8",
+    price: 23.51,
+    description: "French fries, Johnsonville “brat coins” fresh cheese curds, Cudahy slab bacon, chicken gravy, beer mustard crema & scallions in an old style football helmet.",
+    requirements: {
+      fries: true,
+      curds: true,
+      gravy: false
+    } 
+  },
+
   {
     name: "Duck Confit Poutine",
     place: "Refreshment Port",
