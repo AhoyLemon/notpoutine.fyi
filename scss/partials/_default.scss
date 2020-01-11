@@ -7,35 +7,5 @@ h4 { font-size: 1.12rem; }
 h5 { font-size: .83rem; }
 h6 { font-size: .75rem; }
 
-body { background:$body; color:$copy; font-family:$font-family; background: linear-gradient(to bottom, #ed213a, #93291e); background-attachment: fixed; }
+body { background:$body; color:$copy; font-family:$font-family; background: linear-gradient(to bottom, #444, #222); background-attachment: fixed; }
 a { @extend %textlink; }
-
-.crimes { display:grid; grid-template-columns: repeat(3,1fr); gap: 20px; padding:40px;
-  .crime { background:#eee; font-size:20px; border:2px solid rgba(0,0,0,0.2);
-    figure { background-size:cover; height:16vw; background-position: center;
-      //-img { max-width: 100%; }
-    }
-  }
-
-  .name-and-price { display:grid; grid-template-columns: 1fr 110px; gap: 20px; padding:20px;
-    .price { font-size:160%; text-align: right; }
-  }
-
-  figcaption { padding:20px; display: grid; grid-template-columns: 3fr 1fr;
-    p {
-      &:before { content: '“'; }
-      &:after  { content: '”'; }
-    }
-    .requirements {
-      li.yes { 
-        &:before { content: '✔️'; padding-right: 0.5em;}
-      }
-      li.no { 
-        &:before { content: '❌'; padding-right: 0.5em; text-decoration: none; }
-      }
-    }
-  }
-
-  .location { display: grid; grid-template-columns: repeat(2,1fr); padding:20px; }
-
-}

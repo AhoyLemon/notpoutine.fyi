@@ -10,17 +10,25 @@ html(lang="en")
   body
     #app(v-cloak)
 
+      header.site-header
+        h1 Not Poutine, FYI
+
+        nav.questions
+          a#Confused(@click="scrollToAnchor('#Explainer')") Confused?
+
 
       main.crimes
+
         article.crime(v-for="crime in crimes")
-          header.name-and-price
-            h1 {{crime.name}}
-            .price $ {{crime.price}} 
-              //-abbr(title="all prices listed in Canadian dollars, conversion is.... accurate enough.") (CAD)
-          figure(v-bind:style="{ backgroundImage: 'url(img/crimes/'+crime.pic+')' }")
-            //img(:src="'img/crimes/'+crime.pic")
-          figcaption
-            p {{crime.description}}
+          .details
+            h2.name {{crime.name}}
+            .price 
+              abbr(title="all prices listed in Canadian dollars, conversion is.... accurate enough.") $ {{crime.price}} 
+            figure(v-bind:style="{ backgroundImage: 'url(img/crimes/'+crime.pic+')' }")
+              //img(:src="'img/crimes/'+crime.pic")
+            .description
+              p.empty(v-if="!crime.description") no description given
+              p(v-if="crime.description") {{crime.description}}
             ul.requirements
               li.yes(v-if="crime.requirements.fries") fries
               li.no( v-if="!crime.requirements.fries") fries
@@ -29,13 +37,33 @@ html(lang="en")
               li.yes(v-if="crime.requirements.gravy") gravy
               li.no( v-if="!crime.requirements.gravy") gravy
           .location
-            .name {{crime.place}}
+            .place-name {{crime.place}}
             .region(v-if="crime.city && crime.state")
               span.city {{crime.city}}, 
               span.state {{crime.state}}
             .region(v-else-if="crime.city && crime.country")
               span.city {{crime.city}}, 
               span.country {{crime.country}}
+
+      aside.explainer#Explainer
+        p 
+          | Originating from Quebec,  
+          strong poutine
+          |  is a simple dish made with french fries, brown gravy and fresh cheese curds. Sometimes people add other things to their poutine, such as scallions or pork belly 
+          |  or pickled onion or kimchi and 
+          i that is totally fine.
+          |   As long as the three basic ingredients are covered, it's poutine.
+        p This website is an archive of things that self-describe as poutine, which, just so you know, aren't.
+        p This website was done by 
+          a(href="https://ahoylemon.xyz") Lemon
+          | , who has done a number of other websites of similar value, such as 
+          a(href="https://damn.dog") damn.dog
+          |  and 
+          a(href="https://greatsex.tips") greatsex.tips
+        p Want to add your own poutine crime? 
+          i That's great! 
+          a(href="") Use this form 
+          |  and it will be considered for the collection.
 
 
 

@@ -203,57 +203,107 @@ body {
   background: #eee;
   color: #212121;
   font-family: "EB Garamond", serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ed213a), to(#93291e));
-  background: -webkit-linear-gradient(top, #ed213a, #93291e);
-  background: -o-linear-gradient(top, #ed213a, #93291e);
-  background: linear-gradient(to bottom, #ed213a, #93291e);
+  background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#222));
+  background: -webkit-linear-gradient(top, #444, #222);
+  background: -o-linear-gradient(top, #444, #222);
+  background: linear-gradient(to bottom, #444, #222);
   background-attachment: fixed; }
 
 .crimes {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
   gap: 20px;
-  padding: 40px; }
+  padding: 20px; }
   .crimes .crime {
-    background: #eee;
-    font-size: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.2); }
-    .crimes .crime figure {
-      background-size: cover;
-      height: 16vw;
-      background-position: center; }
-  .crimes .name-and-price {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 110px;
-    grid-template-columns: 1fr 110px;
-    gap: 20px;
-    padding: 20px; }
-    .crimes .name-and-price .price {
-      font-size: 160%;
-      text-align: right; }
-  .crimes figcaption {
     padding: 20px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 3fr 1fr;
-    grid-template-columns: 3fr 1fr; }
-    .crimes figcaption p:before {
-      content: '“'; }
-    .crimes figcaption p:after {
-      content: '”'; }
-    .crimes figcaption .requirements li.yes:before {
-      content: '✔️';
-      padding-right: 0.5em; }
-    .crimes figcaption .requirements li.no:before {
-      content: '❌';
-      padding-right: 0.5em;
-      text-decoration: none; }
-  .crimes .location {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px; }
+    background: #fff;
+    font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .crimes .crime .details {
+      width: 100%;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr); }
+      .crimes .crime .details .name, .crimes .crime .details .price {
+        font-size: 140%; }
+      .crimes .crime .details .name {
+        -ms-grid-column-span: 3;
+        grid-column: span 3; }
+      .crimes .crime .details abbr {
+        text-decoration: none;
+        cursor: help; }
+      .crimes .crime .details figure {
+        -ms-grid-column-span: 4;
+        grid-column: span 4;
+        margin: 20px -20px;
+        height: 14em;
+        background-size: cover;
+        background-position: center; }
+      .crimes .crime .details .description {
+        -ms-grid-column-span: 3;
+        grid-column: span 3;
+        padding-right: 1em; }
+        .crimes .crime .details .description p:before {
+          content: '“'; }
+        .crimes .crime .details .description p:after {
+          content: '”'; }
+        .crimes .crime .details .description p.empty {
+          font-style: italic; }
+          .crimes .crime .details .description p.empty:before, .crimes .crime .details .description p.empty:after {
+            content: ''; }
+      .crimes .crime .details .requirements li.yes:before {
+        content: '✔️';
+        padding-right: 0.5em; }
+      .crimes .crime .details .requirements li.no:before {
+        content: '❌';
+        padding-right: 0.5em;
+        text-decoration: none; }
+    .crimes .crime .location {
+      width: 100%;
+      padding-top: 20px; }
+      .crimes .crime .location .place-name, .crimes .crime .location .region {
+        display: inline-block; }
+      .crimes .crime .location .place-name {
+        font-weight: 700; }
+      .crimes .crime .location .region:before {
+        content: ' | '; }
+
+.site-header {
+  padding-left: 20px;
+  padding-right: 20px; }
+  .site-header h1 {
+    font-size: 13vw;
+    font-weight: 100;
+    text-align: center;
+    color: #eee;
+    text-shadow: 0.05em 0.05em 0.05em #212121;
+    line-height: 100%; }
+  .site-header nav.questions {
+    text-align: right;
+    margin-top: 2em;
+    margin-bottom: 2em; }
+    .site-header nav.questions a {
+      font-size: 24px;
+      margin-left: 2em;
+      cursor: pointer; }
+
+aside.explainer {
+  font-size: 22px;
+  line-height: 180%;
+  color: #eee;
+  max-width: 42em;
+  padding: 20px;
+  margin: 3em auto; }
+  aside.explainer p {
+    margin-bottom: 1em; }

@@ -8,21 +8,26 @@
     <link href="css/site.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta http-equiv="last-modified" content="2019-10-27@18:43:47">
+    <meta http-equiv="last-modified" content="2020-00-11@12:42:58">
   </head>
   <body>
     <div id="app" v-cloak>
+      <header class="site-header">
+        <h1>Not Poutine, FYI</h1>
+        <nav class="questions"><a id="Confused" @click="scrollToAnchor('#Explainer')">Confused?</a></nav>
+      </header>
       <main class="crimes">
         <article class="crime" v-for="crime in crimes">
-          <header class="name-and-price">
-            <h1>{{crime.name}}</h1>
-            <div class="price">$ {{crime.price}} </div>
-          </header>
-          <figure v-bind:style="{ backgroundImage: 'url(img/crimes/'+crime.pic+')' }">
-            <!--img(:src="'img/crimes/'+crime.pic")-->
-          </figure>
-          <figcaption>
-            <p>{{crime.description}}</p>
+          <div class="details">
+            <h2 class="name">{{crime.name}}</h2>
+            <div class="price"> <abbr title="all prices listed in Canadian dollars, conversion is.... accurate enough.">$ {{crime.price}} </abbr></div>
+            <figure v-bind:style="{ backgroundImage: 'url(img/crimes/'+crime.pic+')' }">
+              <!--img(:src="'img/crimes/'+crime.pic")-->
+            </figure>
+            <div class="description">
+              <p class="empty" v-if="!crime.description">no description given</p>
+              <p v-if="crime.description">{{crime.description}}</p>
+            </div>
             <ul class="requirements">
               <li class="yes" v-if="crime.requirements.fries">fries</li>
               <li class="no" v-if="!crime.requirements.fries">fries</li>
@@ -31,19 +36,28 @@
               <li class="yes" v-if="crime.requirements.gravy">gravy</li>
               <li class="no" v-if="!crime.requirements.gravy">gravy</li>
             </ul>
-          </figcaption>
+          </div>
           <div class="location">
-            <div class="name">{{crime.place}}</div>
+            <div class="place-name">{{crime.place}}</div>
             <div class="region" v-if="crime.city &amp;&amp; crime.state"><span class="city">{{crime.city}}, </span><span class="state">{{crime.state}}</span></div>
             <div class="region" v-else-if="crime.city &amp;&amp; crime.country"><span class="city">{{crime.city}}, </span><span class="country">{{crime.country}}</span></div>
           </div>
         </article>
       </main>
+      <aside class="explainer" id="Explainer">
+        <p>
+           Originating from Quebec,  <strong>poutine</strong> is a simple dish made with french fries, brown gravy and fresh cheese curds. Sometimes people add other things to their poutine, such as scallions or pork belly 
+           or pickled onion or kimchi and <i>that is totally fine.</i>  As long as the three basic ingredients are covered, it's poutine.
+        </p>
+        <p>This website is an archive of things that self-describe as poutine, which, just so you know, aren't.</p>
+        <p>This website was done by <a href="https://ahoylemon.xyz">Lemon</a>, who has done a number of other websites of similar value, such as <a href="https://damn.dog">damn.dog</a> and <a href="https://greatsex.tips">greatsex.tips</a></p>
+        <p>Want to add your own poutine crime? <i>That's great! </i><a href="">Use this form </a> and it will be considered for the collection.</p>
+      </aside>
     </div>
     <div class="javascripts">
       <script src="js/libraries/vue.full.js"></script>
       <script>const testing = true;</script>
-      <script src="js/min/site.min.js?updated2019-10-27@18:43:47"></script>
+      <script src="js/min/site.min.js?updated2020-00-11@12:42:58"></script>
     </div>
   </body>
 </html>

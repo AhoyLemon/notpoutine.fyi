@@ -1,0 +1,46 @@
+.crimes {
+  
+  display:grid; grid-template-columns: repeat(auto-fill, minmax(460px, 1fr)); gap: 20px; padding:$padding;
+
+  .crime { padding:$padding; background:#fff; font-size:22px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    .details { width:100%; display: grid; grid-template-columns: repeat(4, 1fr);
+      .name, .price { font-size:140%; }
+      .name { grid-column: span 3; }
+      abbr { text-decoration: none; cursor: help; }
+      figure { grid-column: span 4; margin: $padding (0 - $padding); height:14em;  background-size: cover; background-position: center; }
+
+      .description { grid-column: span 3; padding-right: 1em;
+        p {
+          &:before { content: '“'; }
+          &:after  { content: '”'; }
+    
+          &.empty { font-style: italic;
+            &:before, &:after { content:''; }
+          }
+        }
+      }
+
+      .requirements {
+        li.yes { 
+          &:before { content: '✔️'; padding-right: 0.5em;}
+        }
+        li.no { 
+          &:before { content: '❌'; padding-right: 0.5em; text-decoration: none; }
+        }
+      }
+
+    }
+
+
+    .location { width:100%; padding-top:$padding;
+      .place-name, .region { display: inline-block; }
+      .place-name { font-weight: $bold; }
+      .region { 
+        &:before { content: ' | '; }
+      }
+
+      //-.place-name { grid-column: span 4; }
+    }
+  }
+}

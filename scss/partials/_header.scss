@@ -1,0 +1,11 @@
+.site-header { padding-left: $padding; padding-right: $padding;
+  h1 { font-size:13vw; font-weight: 100; text-align: center; color:$white; text-shadow: 0.05em 0.05em 0.05em $black; line-height: 100%; }
+
+  nav.questions { text-align: right; margin-top:2em; margin-bottom: 2em;
+    a { font-size:24px; margin-left: 2em; cursor: pointer; }
+  }
+}
+
+aside.explainer { font-size:22px; line-height: 180%; color:$white; max-width:42em; padding:$padding; margin:3em auto;
+  p { margin-bottom: 1em; }
+}

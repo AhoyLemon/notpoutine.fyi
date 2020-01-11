@@ -6,7 +6,11 @@ var app = new Vue({
   },
 
   methods: {
-
+    scrollToAnchor(a) {
+      document.querySelector(a).scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+    }
   },
 
   computed: {

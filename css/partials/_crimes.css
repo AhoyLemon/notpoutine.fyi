@@ -1,0 +1,49 @@
+@charset "UTF-8";
+.crimes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px; }
+  .crimes .crime {
+    background: #eee;
+    font-size: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.2); }
+    .crimes .crime figure {
+      background-size: cover;
+      height: 16vw;
+      background-position: center; }
+  .crimes .name-and-price {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 110px;
+    grid-template-columns: 1fr 110px;
+    gap: 20px;
+    padding: 20px; }
+    .crimes .name-and-price .price {
+      font-size: 160%;
+      text-align: right; }
+  .crimes figcaption {
+    padding: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1fr; }
+    .crimes figcaption p:before {
+      content: '“'; }
+    .crimes figcaption p:after {
+      content: '”'; }
+    .crimes figcaption .requirements li.yes:before {
+      content: '✔️';
+      padding-right: 0.5em; }
+    .crimes figcaption .requirements li.no:before {
+      content: '❌';
+      padding-right: 0.5em;
+      text-decoration: none; }
+  .crimes .location {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px; }

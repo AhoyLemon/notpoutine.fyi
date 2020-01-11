@@ -3,6 +3,57 @@ const siteURL = "";
 const crimes = [
 
   {
+    name: "Vladimir Poutine",
+    place: "Hop Cat",
+    pic: "vladimir-poutine.jpg",
+    city: "Grand Rapids",
+    state: "MI",
+    country: "US",
+    map: "https://goo.gl/maps/TnDQwdAVYohrmkDNA",
+    price: 14.36,
+    description: "crack fries, chorizo gravy, yellow cheese, crispy bacon, scallions, perogies",
+    requirements: {
+      fries: true,
+      curds: false,
+      gravy: false
+    } 
+  },
+
+  {
+    name: "Short Rib Poutine",
+    place: "Whiskey Cake",
+    pic: "whiskey-cake.jpg",
+    city: "Plano",
+    state: "TX",
+    country: "US",
+    map: "https://goo.gl/maps/1TLS5xZ9igx7afxh8",
+    price: 6.53,
+    description: "hand cut fries, beef pan jus, local goat cheese, pickled veg, sunny side up local egg",
+    requirements: {
+      fries: true,
+      curds: false,
+      gravy: false
+    } 
+  },
+
+  {
+    name: "Okie Poutine",
+    place: "The Mule",
+    pic: "okie-poutine.jpg",
+    city: "Oklahoma City",
+    state: "OK",
+    country: "US",
+    map: "https://g.page/TheMuleOKC?share",
+    price: 11.09,
+    description: "French Fries, White Gravy, Watonga Cheese Curds",
+    requirements: {
+      fries: true,
+      curds: true,
+      gravy: false
+    } 
+  },
+
+  {
     name: "Playoff Poutine",
     place: "Lambeau Field",
     pic: "playoff-poutine.jpg",
