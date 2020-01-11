@@ -3,6 +3,22 @@ const siteURL = "";
 const crimes = [
 
   {
+    name: "Poutine",
+    place: "Soo Eagles Hockey Rink",
+    pic: "soo-eagles.jpg",
+    city: "Sault Ste Marie",
+    state: "MI",
+    country: "US",
+    price: 10.44,
+    description: "steak fries, gravy and shredded mozzarella",
+    requirements: {
+      fries: true,
+      curds: false,
+      gravy: true
+    }
+  },
+
+  {
     name: "Vladimir Poutine",
     place: "Hop Cat",
     pic: "vladimir-poutine.jpg",

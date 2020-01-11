@@ -2,9 +2,9 @@ $cardsize: 460px;
 
 .crimes {
   
-  display:grid; grid-template-columns: repeat(auto-fill, minmax($cardsize, 1fr)); gap: 20px; padding:$padding;
+  display:grid; grid-template-columns: repeat(auto-fill, minmax($cardsize, 1fr)); gap: $gap; padding:$padding;
 
-  .crime { padding:$padding; background:#fff; font-size:22px;
+  .crime { padding:$padding; background:#fff; font-size:22px;  border-radius: 3px;
     display: flex; flex-direction: column; justify-content: space-between;
     .details { width:100%; display: grid; grid-template-columns: repeat(4, 1fr);
       .name, .price { font-size:140%; }
