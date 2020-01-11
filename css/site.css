@@ -279,6 +279,15 @@ body {
       .crimes .crime .location .region:before {
         content: ' | '; }
 
+@media (max-width: 460px) {
+  .crimes {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+    .crimes .crime {
+      font-size: 18px; }
+      .crimes .crime .details figure {
+        height: 50vw; } }
+
 .site-header {
   padding-left: 20px;
   padding-right: 20px; }
@@ -288,7 +297,9 @@ body {
     text-align: center;
     color: #eee;
     text-shadow: 0.05em 0.05em 0.05em #212121;
-    line-height: 100%; }
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: none; }
   .site-header nav.questions {
     text-align: right;
     margin-top: 2em;

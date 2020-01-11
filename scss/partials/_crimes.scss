@@ -1,6 +1,8 @@
+$cardsize: 460px;
+
 .crimes {
   
-  display:grid; grid-template-columns: repeat(auto-fill, minmax(460px, 1fr)); gap: 20px; padding:$padding;
+  display:grid; grid-template-columns: repeat(auto-fill, minmax($cardsize, 1fr)); gap: 20px; padding:$padding;
 
   .crime { padding:$padding; background:#fff; font-size:22px;
     display: flex; flex-direction: column; justify-content: space-between;
@@ -41,6 +43,17 @@
       }
 
       //-.place-name { grid-column: span 4; }
+    }
+  }
+}
+
+
+@media (max-width:$cardsize) {
+  .crimes { grid-template-columns: 1fr;
+    .crime { font-size:18px;
+      .details {
+        figure { height:50vw; }
+      }
     }
   }
 }
