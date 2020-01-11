@@ -8,7 +8,7 @@
     <link href="css/site.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta http-equiv="last-modified" content="2020-00-11@12:50:35">
+    <meta http-equiv="last-modified" content="2020-00-11@13:26:22">
   </head>
   <body>
     <div id="app" v-cloak>
@@ -20,7 +20,7 @@
         <article class="crime" v-for="crime in crimes">
           <div class="details">
             <h2 class="name">{{crime.name}}</h2>
-            <div class="price"> <abbr title="all prices listed in Canadian dollars, conversion is.... accurate enough.">$ {{crime.price}} </abbr></div>
+            <div class="price"> <abbr title="all prices listed in Canadian dollars, conversion is.... accurate enough."> <sup>$</sup><span>{{crime.price}} </span></abbr></div>
             <figure v-bind:style="{ backgroundImage: 'url(img/crimes/'+crime.pic+')' }">
               <!--img(:src="'img/crimes/'+crime.pic")-->
             </figure>
@@ -57,7 +57,7 @@
     <div class="javascripts">
       <script src="js/libraries/vue.full.js"></script>
       <script>const testing = true;</script>
-      <script src="js/min/site.min.js?updated2020-00-11@12:50:35"></script>
+      <script src="js/min/site.min.js?updated2020-00-11@13:26:22"></script>
     </div>
   </body>
 </html>

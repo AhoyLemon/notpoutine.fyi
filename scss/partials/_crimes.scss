@@ -9,7 +9,9 @@ $cardsize: 460px;
     .details { width:100%; display: grid; grid-template-columns: repeat(4, 1fr);
       .name, .price { font-size:140%; }
       .name { grid-column: span 3; }
-      abbr { text-decoration: none; cursor: help; }
+      abbr { text-decoration: none; cursor: help; white-space: nowrap;
+        sup { font-size:80%; padding-right: 0.1em; }
+      }
       figure { grid-column: span 4; margin: $padding (0 - $padding); height:14em;  background-size: cover; background-position: center; }
 
       .description { grid-column: span 3; padding-right: 1em;

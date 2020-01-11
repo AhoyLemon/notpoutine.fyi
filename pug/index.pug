@@ -23,7 +23,9 @@ html(lang="en")
           .details
             h2.name {{crime.name}}
             .price 
-              abbr(title="all prices listed in Canadian dollars, conversion is.... accurate enough.") $ {{crime.price}} 
+              abbr(title="all prices listed in Canadian dollars, conversion is.... accurate enough.") 
+                sup $
+                span {{crime.price}} 
             figure(v-bind:style="{ backgroundImage: 'url(img/crimes/'+crime.pic+')' }")
               //img(:src="'img/crimes/'+crime.pic")
             .description

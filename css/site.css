@@ -243,7 +243,11 @@ body {
         grid-column: span 3; }
       .crimes .crime .details abbr {
         text-decoration: none;
-        cursor: help; }
+        cursor: help;
+        white-space: nowrap; }
+        .crimes .crime .details abbr sup {
+          font-size: 80%;
+          padding-right: 0.1em; }
       .crimes .crime .details figure {
         -ms-grid-column-span: 4;
         grid-column: span 4;
