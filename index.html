@@ -8,7 +8,7 @@
     <link href="css/site.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="a running collection of menu items which claim to be poutine, but aren't.">
-    <meta http-equiv="last-modified" content="2020-00-12@13:01:23">
+    <meta http-equiv="last-modified" content="2020-00-12@13:05:11">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
@@ -40,7 +40,7 @@
       </header>
       <main class="crimes">
         <template v-for="(crime, index) in crimes">
-          <article class="crime add-a-crime" v-if="index == Math.floor( (crimes.length / 2) - 1 )">
+          <article class="crime add-a-crime" v-if="index == Math.floor( (crimes.length / 2) )">
             <div class="details">
               <h2 class="name"> <a href="https://forms.gle/1zV1dYj7vh8t81wT9">Report A Crime</a></h2>
               <div class="price"></div>
@@ -94,7 +94,7 @@
         const testing = false;
         
       </script>
-      <script src="js/min/site.min.js?updated2020-00-12@13:01:23"></script>
+      <script src="js/min/site.min.js?updated2020-00-12@13:05:11"></script>
     </div>
   </body>
 </html>

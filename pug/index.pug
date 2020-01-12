@@ -21,7 +21,7 @@ html(lang="en")
 
         template(v-for="(crime, index) in crimes")
 
-          article.crime.add-a-crime(v-if="index == Math.floor( (crimes.length / 2) - 1 )")
+          article.crime.add-a-crime(v-if="index == Math.floor( (crimes.length / 2) )")
             .details
               h2.name 
                 a(href="https://forms.gle/1zV1dYj7vh8t81wT9") Report A Crime
