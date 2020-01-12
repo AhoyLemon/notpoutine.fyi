@@ -149,22 +149,6 @@ const crimes = [
       gravy: false
     }
   },
-  {
-    name: "Beef Brisket Poutine",
-    place: "Refreshment Port",
-    pic: "refreshment-port-brisket.jpg",
-    city: "Orlando",
-    state: "FL",
-    country: "US",
-    map: "https://goo.gl/maps/FHhrc3KEAxvSGWWE8",
-    price: 11.94,
-    description: "French Fries with Beef Brisket, Beer-Cheese Sauce, and Poutine Gravy topped with Crispy Onions",
-    requirements: {
-      fries: true,
-      curds: false,
-      gravy: false
-    },
-  },
 
   {
     name: "Puotine",
@@ -211,6 +195,23 @@ const crimes = [
     requirements: {
       fries: false,
       curds: true,
+      gravy: false
+    },
+  },
+
+  {
+    name: "Beef Brisket Poutine",
+    place: "Refreshment Port",
+    pic: "refreshment-port-brisket.jpg",
+    city: "Orlando",
+    state: "FL",
+    country: "US",
+    map: "https://goo.gl/maps/FHhrc3KEAxvSGWWE8",
+    price: 11.94,
+    description: "French Fries with Beef Brisket, Beer-Cheese Sauce, and Poutine Gravy topped with Crispy Onions",
+    requirements: {
+      fries: true,
+      curds: false,
       gravy: false
     },
   },
