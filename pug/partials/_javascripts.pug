@@ -10,3 +10,20 @@
       const testing = false;
 
   script(src="js/min/site.min.js?updated"+lastUpdated)
+
+  // Global site tag (gtag.js) - Google Analytics
+  script(async src="https://www.googletagmanager.com/gtag/js?id=UA-15129990-34")
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-15129990-34');
+
+  script(src="https://cdn.trackjs.com/agent/v3/latest/t.js")
+  script.
+    TrackJS.install({
+      token: "9947e081831c42b8aeb3a5fb81a152c4",
+      application: "notPoutineFYI"
+      // for more configuration options, see https://docs.trackjs.com
+    });

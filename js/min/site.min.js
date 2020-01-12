@@ -35,13 +35,22 @@ function removeFromArray(haystack,needle) {
 
 function sendEvent(c, a, l, v) {
   if (v) {
-    ga('send', 'event', { eventCategory: c, eventAction: a, eventLabel: l, eventValue:v });
+    gtag('event', a, {
+      'event_category': c,
+      'event_label': l,
+      'value': v
+    });
     //console.log('CATEGORY: '+c+', ACTION:'+a+', LABEL:'+l+', VALUE:'+v);
   } else if (l) {
-    ga('send', 'event', { eventCategory: c, eventAction: a, eventLabel: l });
+    gtag('event', a, {
+      'event_category': c,
+      'event_label': l
+    });
     //console.log('CATEGORY: '+c+', ACTION:'+a+', LABEL:'+l);
   } else {
-    ga('send', 'event', { eventCategory: c, eventAction: a });
+    gtag('event', a, {
+      'event_category': c
+    });
     //console.log('CATEGORY: '+c+', ACTION:'+a);
   }
 }

@@ -8,7 +8,7 @@
     <link href="css/site.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="a running collection of menu items which claim to be poutine, but aren't.">
-    <meta http-equiv="last-modified" content="2020-00-12@13:05:11">
+    <meta http-equiv="last-modified" content="2020-00-12@14:17:02">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
@@ -36,17 +36,17 @@
     <div id="app" v-cloak>
       <header class="site-header">
         <h1>Not Poutine, FYI</h1>
-        <nav class="questions"><a id="Confused" @click="scrollToAnchor('#Explainer')">Confused?</a></nav>
+        <nav class="questions"><a id="Confused" @click="scrollToAnchor('#Explainer')" onClick="sendEvent('click','Confused?','explainer')">Confused?</a></nav>
       </header>
       <main class="crimes">
         <template v-for="(crime, index) in crimes">
           <article class="crime add-a-crime" v-if="index == Math.floor( (crimes.length / 2) )">
             <div class="details">
-              <h2 class="name"> <a href="https://forms.gle/1zV1dYj7vh8t81wT9">Report A Crime</a></h2>
+              <h2 class="name"> <a href="https://forms.gle/1zV1dYj7vh8t81wT9" onClick="sendEvent('click','form','https://forms.gle/1zV1dYj7vh8t81wT9')">Report A Crime</a></h2>
               <div class="price"></div>
               <figure style="background-image:url(img/crimes/police-poutine.jpg)"></figure>
               <div class="description">
-                <p class="empty" style="font-style:normal">Are you aware of a poutine crime which you'd like to report here? Great!  <a href="https://forms.gle/1zV1dYj7vh8t81wT9">Use this form</a>. Your crime report will be considered for addition to the site.</p>
+                <p class="empty" style="font-style:normal">Are you aware of a poutine crime which you'd like to report here? Great!  <a href="https://forms.gle/1zV1dYj7vh8t81wT9" onClick="sendEvent('click','form','https://forms.gle/1zV1dYj7vh8t81wT9')">Use this form</a>. Your crime report will be considered for addition to the site.</p>
               </div>
             </div>
           </article>
@@ -84,8 +84,8 @@
            or pickled onion or kimchi and <i>that is totally fine.</i>  As long as the three basic ingredients are covered, it's poutine.
         </p>
         <p>This website is an archive of things that self-describe as poutine, which, just so you know, aren't.</p>
-        <p>This website was done by <a href="https://ahoylemon.xyz">Lemon</a>, who has done a number of other websites of similar value, such as <a href="https://damn.dog">damn.dog</a> and <a href="https://greatsex.tips">greatsex.tips</a>.</p>
-        <p>Want to add your own poutine crime? <i>That's great! </i><a href="https://forms.gle/1zV1dYj7vh8t81wT9">Use this form </a> and it will be considered for the collection.</p>
+        <p>This website was done by <a href="https://ahoylemon.xyz" onClick="sendEvent('click','website','ahoylemon.xyz')">Lemon</a>, who has done a number of other websites of similar value, such as <a href="https://damn.dog" onClick="sendEvent('click','website','damn.dog')">damn.dog</a> and <a href="https://greatsex.tips" onClick="sendEvent('click','website','ahoylemon.xyz')">greatsex.tips</a>.</p>
+        <p>Want to add your own poutine crime? <i>That's great! </i><a href="https://forms.gle/1zV1dYj7vh8t81wT9" onClick="sendEvent('click','form','https://forms.gle/1zV1dYj7vh8t81wT9')">Use this form </a> and it will be considered for the collection.</p>
       </aside>
     </div>
     <div class="javascripts">
@@ -94,7 +94,25 @@
         const testing = false;
         
       </script>
-      <script src="js/min/site.min.js?updated2020-00-12@13:05:11"></script>
+      <script src="js/min/site.min.js?updated2020-00-12@14:17:02"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics-->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15129990-34"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-15129990-34');
+        
+      </script>
+      <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+      <script>
+        TrackJS.install({
+          token: "9947e081831c42b8aeb3a5fb81a152c4",
+          application: "notPoutineFYI"
+          // for more configuration options, see https://docs.trackjs.com
+        });
+      </script>
     </div>
   </body>
 </html>

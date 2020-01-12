@@ -14,7 +14,7 @@ html(lang="en")
         h1 Not Poutine, FYI
 
         nav.questions
-          a#Confused(@click="scrollToAnchor('#Explainer')") Confused?
+          a#Confused(@click="scrollToAnchor('#Explainer')" onClick="sendEvent('click','Confused?','explainer')") Confused?
 
 
       main.crimes
@@ -24,12 +24,12 @@ html(lang="en")
           article.crime.add-a-crime(v-if="index == Math.floor( (crimes.length / 2) )")
             .details
               h2.name 
-                a(href="https://forms.gle/1zV1dYj7vh8t81wT9") Report A Crime
+                a(href="https://forms.gle/1zV1dYj7vh8t81wT9" onClick="sendEvent('click','form','https://forms.gle/1zV1dYj7vh8t81wT9')") Report A Crime
               .price
               figure(style="background-image:url(img/crimes/police-poutine.jpg)")
               .description
                 p.empty(style="font-style:normal") Are you aware of a poutine crime which you'd like to report here? Great!  
-                  a(href="https://forms.gle/1zV1dYj7vh8t81wT9") Use this form
+                  a(href="https://forms.gle/1zV1dYj7vh8t81wT9" onClick="sendEvent('click','form','https://forms.gle/1zV1dYj7vh8t81wT9')") Use this form
                   | . Your crime report will be considered for addition to the site.
 
 
@@ -71,15 +71,15 @@ html(lang="en")
           |   As long as the three basic ingredients are covered, it's poutine.
         p This website is an archive of things that self-describe as poutine, which, just so you know, aren't.
         p This website was done by 
-          a(href="https://ahoylemon.xyz") Lemon
+          a(href="https://ahoylemon.xyz" onClick="sendEvent('click','website','ahoylemon.xyz')") Lemon
           | , who has done a number of other websites of similar value, such as 
-          a(href="https://damn.dog") damn.dog
+          a(href="https://damn.dog" onClick="sendEvent('click','website','damn.dog')") damn.dog
           |  and 
-          a(href="https://greatsex.tips") greatsex.tips
+          a(href="https://greatsex.tips"  onClick="sendEvent('click','website','ahoylemon.xyz')") greatsex.tips
           | .
         p Want to add your own poutine crime? 
           i That's great! 
-          a(href="https://forms.gle/1zV1dYj7vh8t81wT9") Use this form 
+          a(href="https://forms.gle/1zV1dYj7vh8t81wT9" onClick="sendEvent('click','form','https://forms.gle/1zV1dYj7vh8t81wT9')") Use this form 
           |  and it will be considered for the collection.
 
 
