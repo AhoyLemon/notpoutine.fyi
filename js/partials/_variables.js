@@ -179,7 +179,7 @@ const crimes = [
     requirements: {
       fries: true,
       curds: true,
-      gravy: true
+      gravy: false
     },
   },
 
