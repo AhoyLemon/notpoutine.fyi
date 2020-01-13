@@ -35,15 +35,15 @@ const crimes = [
   },
 
   {
-    name: "Short Rib Poutine",
-    place: "Whiskey Cake",
-    pic: "whiskey-cake.jpg",
-    city: "Plano",
+    name: "Hector's Poutine",
+    place: "Angry Dog",
+    pic: "hectors.jpg",
+    city: "Dallas",
     state: "TX",
     country: "US",
-    map: "https://goo.gl/maps/1TLS5xZ9igx7afxh8",
-    price: 6.53,
-    description: "hand cut fries, beef pan jus, local goat cheese, pickled veg, sunny side up local egg",
+    map: "https://goo.gl/maps/C6Ew6BWzTpyL8Dcb7",
+    price: 12.98,
+    description: "Fries, Cheddar cheese, chorizo and jalapeño gravy",
     requirements: {
       fries: true,
       curds: false,
@@ -92,6 +92,23 @@ const crimes = [
     map: "https://goo.gl/maps/TnDQwdAVYohrmkDNA",
     price: 14.36,
     description: "crack fries, chorizo gravy, yellow cheese, crispy bacon, scallions, perogies",
+    requirements: {
+      fries: true,
+      curds: false,
+      gravy: false
+    } 
+  },
+
+  {
+    name: "Short Rib Poutine",
+    place: "Whiskey Cake",
+    pic: "whiskey-cake.jpg",
+    city: "Plano",
+    state: "TX",
+    country: "US",
+    map: "https://goo.gl/maps/1TLS5xZ9igx7afxh8",
+    price: 6.53,
+    description: "hand cut fries, beef pan jus, local goat cheese, pickled veg, sunny side up local egg",
     requirements: {
       fries: true,
       curds: false,
