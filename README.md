@@ -1,4 +1,4 @@
-![Not Poutine, FYI](https://notpoutine.fyi/og-wide.png)
+# Not Poutine, FYI
 
 The purpose of this site is to catlog menu items which are descibed as poutine and yet are not poutine.
 
