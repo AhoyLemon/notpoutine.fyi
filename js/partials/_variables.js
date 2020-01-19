@@ -3,6 +3,54 @@ const siteURL = "";
 const crimes = [
 
   {
+    name:        "Butter Chicken Poutine",
+    place:       "Bliss",
+    pic:         "bliss-butter-chicken.jpg",
+    city:        "Quesnel",
+    state:       "BC",
+    country:     "CA",
+    price:       12.00,
+    description: "Fries, Butter Chicken and mozza",
+    requirements: {
+      fries:     true,
+      curds:     false,
+      gravy:     false
+    }
+  },
+
+  {
+    name:        "Poutine Skillet",
+    place:       "CJ Mahoney's",
+    pic:         "poutine-skillet.jpg",
+    city:        "Rochester",
+    state:       "MI",
+    country:     "US",
+    price:       11.74,
+    description: "Deep fried tater tots, melted white cheddar curds, brown gravy, garnished with bacon bits and green onions.",
+    requirements: {
+      fries:     false,
+      curds:     false,
+      gravy:     true
+    }
+  },
+
+  {
+    name:        "Lobster Poutine",
+    place:       "The Cook & The Ox",
+    pic:         "lobster-poutine.jpg",
+    city:        "MSP Airport",
+    state:       "MN",
+    country:     "US",
+    price:       22.20,
+    description: "Lobster cream sauce, fries, white cheddar, garlic bread crumbs",
+    requirements: {
+      fries:     true,
+      curds:     false,
+      gravy:     false
+    }
+  },
+
+  {
     name:        "Broadway Poutine",
     place:       "Broadway Pizza",
     pic:         "broadway-pizza.jpg",
