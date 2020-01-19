@@ -39,7 +39,7 @@ html(lang="en")
               .price 
                 abbr(title="all prices listed in Canadian dollars. Conversion is accurate enough.") 
                   sup $
-                  span {{crime.price}} 
+                  span {{crime.price.toFixed(2)}} 
               figure(v-bind:style="{ backgroundImage: 'url(img/crimes/'+crime.pic+')' }")
                 //img(:src="'img/crimes/'+crime.pic")
               .description
