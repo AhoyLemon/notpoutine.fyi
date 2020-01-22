@@ -9,6 +9,7 @@ const crimes = [
     city:        "Virginia Beach",
     state:       "VA",
     country:     "US",
+    map:         "https://goo.gl/maps/Ft4j5qqXh9ERoSNg6",
     price:       13.12,
     description: "Fries topped with mozarella cheese and a lobster cheesy sauce poured on top to melt it.",
     requirements: {
@@ -25,6 +26,7 @@ const crimes = [
     city:        "Quesnel",
     state:       "BC",
     country:     "CA",
+    map:         "https://goo.gl/maps/gSMQcN5b8ipnkemaA",
     price:       12.00,
     description: "Fries, Butter Chicken and mozza",
     requirements: {
@@ -41,6 +43,7 @@ const crimes = [
     city:        "Rochester",
     state:       "MI",
     country:     "US",
+    map:         "https://goo.gl/maps/gSMQcN5b8ipnkemaA",
     price:       11.74,
     description: "Deep fried tater tots, melted white cheddar curds, brown gravy, garnished with bacon bits and green onions.",
     requirements: {
@@ -57,6 +60,7 @@ const crimes = [
     city:        "Minneapolis",
     state:       "MI",
     country:     "US",
+    map:         "https://goo.gl/maps/EEczXVf2tCoj2tRA7",
     price:       13.05,
     description: "crispy tots and handmade battered cheddar curds smothered with smoky cheese sauce, zesty herb seasoned tomatoes, jalapeno bacon and more cheddar on top!",
     requirements: {
@@ -73,6 +77,7 @@ const crimes = [
     city:        "MSP Airport",
     state:       "MN",
     country:     "US",
+    map:         "https://goo.gl/maps/xSyKb9ZPF9MMARe16",
     price:       22.20,
     description: "Lobster cream sauce, fries, white cheddar, garlic bread crumbs",
     requirements: {
@@ -89,6 +94,7 @@ const crimes = [
     city:        "Petoskey",
     state:       "MI",
     country:     "US",
+    map:         "https://goo.gl/maps/xSyKb9ZPF9MMARe16",
     price:       18.28,
     description: "House made Luna beer cheese, green onion, white cheddar cheese curds",
     requirements: {
@@ -122,6 +128,7 @@ const crimes = [
     city:        "Sault Ste Marie",
     state:       "MI",
     country:     "US",
+    map:         "https://goo.gl/maps/2VaWVtsXXVTdQf6h9",
     price:       10.44,
     description: "steak fries, gravy and shredded mozzarella",
     requirements: {
@@ -132,13 +139,14 @@ const crimes = [
   },
 
   {
-    name: "Pink Persia Poutine",
-    place: "Frittenwerk",
-    pic: "pink-persia-poutine.jpg",
-    city: "Düsseldorf",
-    country: "Germany",
-    price: 7.59,
-    description: "large portion of house fries with fluffy falafel balls, pink hummus, crispy arugula and refreshing lemon aioli ",
+    name:        "Pink Persia Poutine",
+    place:       "Frittenwerk",
+    pic:         "pink-persia-poutine.jpg",
+    city:        "Düsseldorf",
+    country:     "Germany",
+    price:       7.59,
+    map:         "https://goo.gl/maps/HeaZbTSqr2oHzwmLA",
+    description: "large portion of house fries with fluffy falafel balls, pink hummus, crispy arugula and refreshing lemon aioli",
     requirements: {
       fries: true,
       curds: false,
@@ -265,13 +273,14 @@ const crimes = [
   },
 
   {
-    name: "Farm-To-Table Poutine",
-    place: "Wise Acre",
-    pic: "wiseacre.jpg",
-    city: "Minneapolis",
-    state: "MN",
-    country: "US",
-    price: 16.37,
+    name:        "Farm-To-Table Poutine",
+    place:       "Wise Acre",
+    pic:         "wiseacre.jpg",
+    city:        "Minneapolis",
+    state:       "MN",
+    country:     "US",
+    price:       16.37,
+    map:         "https://goo.gl/maps/gYZcT9YDxgYLzKMGA",
     description: "home fries with sautéed farm vegetables, house-made breakfast sausage, Castle Rock Organic Dairy cheese curds, poached eggs, and Granny Dell's black pepper gravy",
     requirements: {
       fries: false,
@@ -299,13 +308,14 @@ const crimes = [
 
 
   {
-    name: "Poutine",
-    place: "Red Cow",
-    pic: "redcow.jpg",
-    city: "Minneapolis",
-    state: "MN",
-    country: "US",
-    price: 14.55,
+    name:        "Poutine",
+    place:       "Red Cow",
+    pic:         "redcow.jpg",
+    city:        "Minneapolis",
+    state:       "MN",
+    country:     "US",
+    map:         "https://goo.gl/maps/8vMxcWNKqB5KqBUo7",
+    price:       14.55,
     description: "house fries w/ Summit beer cheese and braised beef",
     requirements: {
       fries: true,
