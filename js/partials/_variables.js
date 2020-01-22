@@ -37,6 +37,23 @@ const crimes = [
   },
 
   {
+    name:        "Sweet Poutine",
+    place:       "Robson's Fries",
+    pic:         "sweet-poutine-japan.jpg",
+    city:        "Tokyo",
+    //state:       "BC",
+    country:     "Japan",
+    map:         "https://goo.gl/maps/NwE6XjnYybofkDqo8",
+    price:       6.47,
+    description: "We've topped it with custard loaded with eggs, mixed berries, and pure Canadian maple syrup. And of course, plenty of cheese!",
+    requirements: {
+      fries:     true,
+      curds:     false,
+      gravy:     false
+    }
+  },
+
+  {
     name:        "Poutine Skillet",
     place:       "CJ Mahoney's",
     pic:         "poutine-skillet.jpg",
@@ -119,6 +136,23 @@ const crimes = [
       curds: false,
       gravy: false
     } 
+  },
+
+  {
+    name:        "Poutine x Cod Roe Sauce",
+    place:       "Becker's",
+    pic:         "becker-cod-roe.jpg",
+    city:        "Tokyo",
+    //state:       "BC",
+    country:     "Japan",
+    map:         "https://goo.gl/maps/j1pyEgKzrquqTtTU6",
+    price:       4.07,
+    description: "french fries, shredded cheese, cod roe sauce, dried nori seaweed",
+    requirements: {
+      fries:     true,
+      curds:     false,
+      gravy:     false
+    }
   },
 
   {
