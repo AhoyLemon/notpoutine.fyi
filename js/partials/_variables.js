@@ -3,6 +3,22 @@ const siteURL = "";
 const crimes = [
 
   {
+    name:        "Cheesy Lobster Sauce Poutine",
+    place:       "Bite of Maine",
+    pic:         "bito-maine.jpg",
+    city:        "Virginia Beach",
+    state:       "VA",
+    country:     "US",
+    price:       13.12,
+    description: "Fries topped with mozarella cheese and a lobster cheesy sauce poured on top to melt it.",
+    requirements: {
+          fries: true,
+          curds: false,
+          gravy: false
+    }
+  },
+
+  {
     name:        "Butter Chicken Poutine",
     place:       "Bliss",
     pic:         "bliss-butter-chicken.jpg",
@@ -35,22 +51,6 @@ const crimes = [
   },
 
   {
-    name:        "Lobster Poutine",
-    place:       "The Cook & The Ox",
-    pic:         "lobster-poutine.jpg",
-    city:        "MSP Airport",
-    state:       "MN",
-    country:     "US",
-    price:       22.20,
-    description: "Lobster cream sauce, fries, white cheddar, garlic bread crumbs",
-    requirements: {
-      fries:     true,
-      curds:     false,
-      gravy:     false
-    }
-  },
-
-  {
     name:        "Broadway Poutine",
     place:       "Broadway Pizza",
     pic:         "broadway-pizza.jpg",
@@ -61,6 +61,22 @@ const crimes = [
     description: "crispy tots and handmade battered cheddar curds smothered with smoky cheese sauce, zesty herb seasoned tomatoes, jalapeno bacon and more cheddar on top!",
     requirements: {
       fries:     false,
+      curds:     false,
+      gravy:     false
+    }
+  },
+
+  {
+    name:        "Lobster Poutine",
+    place:       "The Cook & The Ox",
+    pic:         "lobster-poutine.jpg",
+    city:        "MSP Airport",
+    state:       "MN",
+    country:     "US",
+    price:       22.20,
+    description: "Lobster cream sauce, fries, white cheddar, garlic bread crumbs",
+    requirements: {
+      fries:     true,
       curds:     false,
       gravy:     false
     }

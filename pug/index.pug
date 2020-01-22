@@ -53,7 +53,8 @@ html(lang="en")
                 li.yes(v-if="crime.requirements.gravy") gravy
                 li.no( v-if="!crime.requirements.gravy") gravy
             .location
-              .place-name {{crime.place}}
+              .place-name {{crime.place}} 
+              |  fart
               .region(v-if="crime.city && crime.state")
                 span.city {{crime.city}}, 
                 span.state {{crime.state}}
