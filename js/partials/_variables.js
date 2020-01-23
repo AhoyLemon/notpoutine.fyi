@@ -173,6 +173,23 @@ const crimes = [
   },
 
   {
+    name:        "Poutine",
+    place:       "Blue Bear",
+    pic:         "bluebear-swiss.jpg",
+    city:        "Racine",
+    state:       "WI",
+    country:     "US",
+    map:         "https://goo.gl/maps/RdJ4eZdJUUnSRReU7",
+    price:       15.76,
+    description: "gouda cream sauce, bordelaise sauce, Swiss cheese, duck fat fries, onion rings",
+    requirements: {
+      fries: true,
+      curds: false,
+      gravy: true
+    } 
+  },
+
+  {
     name:        "Poutine x Cod Roe Sauce",
     place:       "Becker's",
     pic:         "becker-cod-roe.jpg",
