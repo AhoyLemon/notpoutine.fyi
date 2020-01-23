@@ -308,6 +308,23 @@ const crimes = [
   },
 
   {
+    name: "The Unicorn Poutine",
+    place: "The Enchanted Poutinerie",
+    pic: "enchanted-unicorn.jpg",
+    city: "North York",
+    state: "ON",
+    country: "Canada",
+    map: "https://goo.gl/maps/pTMWMPQh5d99zBhm9",
+    price: 10.79,
+    description: "Fresh Rainbow Quebec Curds, Multi-colour gravy",
+    requirements: {
+      fries: true,
+      curds: true,
+      gravy: false
+    },
+  },
+
+  {
     name: "Playoff Poutine",
     place: "Lambeau Field",
     pic: "playoff-poutine.jpg",
@@ -349,7 +366,7 @@ const crimes = [
     country: "Ukraine",
     map: "https://goo.gl/maps/pTMWMPQh5d99zBhm9",
     price: 7.63,
-    //description: "French Fries with Beef Brisket, Beer-Cheese Sauce, and Poutine Gravy topped with Crispy Onions",
+    description: null,
     requirements: {
       fries: true,
       curds: false,
@@ -357,23 +374,7 @@ const crimes = [
     },
   },
 
-  {
-    name: "The Unicorn Poutine",
-    place: "The Enchanted Poutinerie",
-    pic: "enchanted-unicorn.jpg",
-    city: "North York",
-    state: "ON",
-    country: "Canada",
-    map: "https://goo.gl/maps/pTMWMPQh5d99zBhm9",
-    price: 10.79,
-    description: "Fresh Rainbow Quebec Curds, Multi-colour gravy",
-    requirements: {
-      fries: true,
-      curds: true,
-      gravy: false
-    },
-  },
-
+  /*
   {
     name: "Beef Brisket Poutine",
     place: "Refreshment Port",
@@ -390,6 +391,7 @@ const crimes = [
       gravy: false
     },
   },
+  */
 
 
   {
