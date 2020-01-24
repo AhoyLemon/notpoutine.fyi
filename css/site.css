@@ -281,6 +281,13 @@ body {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+  position: relative;
+  z-index: 3;
+}
+.crimes .crime .details .name:hover {
+  overflow: visible;
+  background: #fff;
+  padding-right: 0.35em;
 }
 .crimes .crime .details abbr {
   text-decoration: none;

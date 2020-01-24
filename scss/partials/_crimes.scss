@@ -7,7 +7,8 @@ $cardsize: 430px;
     display: flex; flex-direction: column; justify-content: space-between;
     .details { width:100%; display: grid; grid-template-columns: 1fr 1fr 1fr 85px; //grid-template-columns: repeat(4, 1fr);
       .name, .price { font-size:140%; }
-      .name { grid-column: span 3; white-space: nowrap; overflow:hidden; text-overflow: ellipsis;
+      .name { grid-column: span 3; white-space: nowrap; overflow:hidden; text-overflow: ellipsis; position: relative; z-index: 3;
+        &:hover { overflow: visible; background:#fff; padding-right: 0.35em; }
         
       }
       abbr { text-decoration: none; cursor: help; white-space: nowrap;
