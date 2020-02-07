@@ -396,6 +396,15 @@ body {
     .scorecard-outer .close:active {
       background: #212121; }
 
+@media (max-width: 520px) {
+  .scorecard-outer {
+    overflow-y: scroll;
+    display: block; }
+    .scorecard-outer th {
+      display: none; }
+    .scorecard-outer table.requirements .good, .scorecard-outer table.requirements .bad {
+      width: 32px; } }
+
 .site-header {
   padding-left: 20px;
   padding-right: 20px; }

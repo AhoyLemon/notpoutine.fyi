@@ -29,3 +29,12 @@
     &:active { background:$black; }
   }
 }
+
+@media (max-width:520px) {
+  .scorecard-outer { overflow-y: scroll; display: block;
+    th { display:none; }
+    table.requirements {
+      .good, .bad { width:32px; }
+    }
+  }
+}
