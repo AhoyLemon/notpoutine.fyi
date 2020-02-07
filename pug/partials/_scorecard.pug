@@ -1,0 +1,55 @@
+.scorecard-outer(v-if="showScores")
+  .scorecard
+
+    a.close(@click="showScores = false") x
+
+    .header-line
+        span {{crimes.length}} crimes reported so far.
+
+    table.requirements
+      thead
+        tr
+          th 
+          th.good Pass
+          th.bad Fail
+      tbody
+        tr
+          td
+            .requirement-name Fries
+            .rule many varieties of fries are acceptable, however potato wedges, tater tots, cottage fries or home fries are not.
+          td.good
+            span {{computedScores.fries.good}}
+          td.bad
+            span {{computedScores.fries.bad}}
+        tr
+          td
+            .requirement-name Curds
+            .rule typically cheddar, although that is negotiable. However, the curds should be fresh (not fried), and should be curds. Shredded mozzarella is not cheese curds.
+          td.good
+            span {{computedScores.curds.good}}
+          td.bad
+            span {{computedScores.curds.bad}}
+        tr
+          td
+            .requirement-name Gravy
+            .rule some type of brown gravy needs to be present. This can be made in many different ways and can be called "demi-glace" if you feel like it. Cream sauce is not brown gravy.
+          td.good
+            span {{computedScores.gravy.good}}
+          td.bad
+            span {{computedScores.gravy.bad}}
+    
+    dl.list
+      dt Countries
+      dd
+        span(v-for="country in computedScores.countryList") {{country}}
+    
+    //-dl.list
+      dt US States
+      dd
+        span(v-for="state in computedScores.stateList") {{state}}
+    
+    dl.figure
+      dt Average price
+      dd
+        span.big-number {{'$'+computedScores.averagePrice.toFixed(2)}}
+        .footnote all prices are listed in Canadian Dollars, converted at the time of posting.

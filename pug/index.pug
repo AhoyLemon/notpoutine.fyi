@@ -14,8 +14,8 @@ html(lang="en")
         h1 Not Poutine, FYI
 
         nav.questions
+          a(@click="showScores = !showScores") Scores
           a#Confused(@click="scrollToAnchor('#Explainer')" onClick="sendEvent('click','Confused?','explainer')") Confused?
-
 
       main.crimes
 
@@ -86,7 +86,7 @@ html(lang="en")
           a(href="https://forms.gle/1zV1dYj7vh8t81wT9" onClick="sendEvent('click','form','https://forms.gle/1zV1dYj7vh8t81wT9')") Use this form 
           |  and it will be considered for the collection.
 
-
+      include partials/_scorecard
 
       //-main(style="height:100vh; display:flex; align-items:center; justify-content:center;")
         .inner

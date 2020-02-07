@@ -3,23 +3,6 @@ const siteURL = "";
 const crimes = [
 
   {
-    name:        "Poutine Skillet",
-    place:       "CJ Mahoney's",
-    pic:         "poutine-skillet.jpg",
-    city:        "Rochester",
-    state:       "MI",
-    country:     "US",
-    map:         "https://goo.gl/maps/gSMQcN5b8ipnkemaA",
-    price:       11.74,
-    description: "Deep fried tater tots, melted white cheddar curds, brown gravy, garnished with bacon bits and green onions.",
-    requirements: {
-      fries:     false,
-      curds:     false,
-      gravy:     true
-    }
-  },
-
-  {
     name:        "Butter Chicken Poutine",
     place:       "Bliss",
     pic:         "bliss-butter-chicken.jpg",
@@ -51,6 +34,23 @@ const crimes = [
       curds: true,
       gravy: false
     },
+  },
+  
+  {
+    name:        "Punjabi Poutine",
+    place:       "Burger Liquor",
+    pic:         "punjabi-nz.jpg",
+    city:        "Wellington",
+    //state:       "MI",
+    country:     "New Zealand",
+    map:         "https://goo.gl/maps/318phZ6DiXZHWRjq8",
+    price:       12.01,
+    description: "Fat fries with garlic salt and mozarella, smothered in the city's best butter chicken sauce!",
+    requirements: {
+      fries: true,
+      curds: false,
+      gravy: false
+    }
   },
 
   {
@@ -173,22 +173,22 @@ const crimes = [
   },
 
   {
-    name:        "Punjabi Poutine",
-    place:       "Burger Liquor",
-    pic:         "punjabi-nz.jpg",
-    city:        "Wellington",
-    //state:       "MI",
-    country:     "New Zealand",
-    map:         "https://goo.gl/maps/318phZ6DiXZHWRjq8",
-    price:       12.01,
-    description: "Fat fries with garlic salt and mozarella, smothered in the city's best butter chicken sauce!",
+    name:        "Poutine Skillet",
+    place:       "CJ Mahoney's",
+    pic:         "poutine-skillet.jpg",
+    city:        "Rochester",
+    state:       "MI",
+    country:     "US",
+    map:         "https://goo.gl/maps/gSMQcN5b8ipnkemaA",
+    price:       11.74,
+    description: "Deep fried tater tots, melted white cheddar curds, brown gravy, garnished with bacon bits and green onions.",
     requirements: {
-      fries: true,
-      curds: false,
-      gravy: false
+      fries:     false,
+      curds:     true,
+      gravy:     true
     }
   },
-
+  
   {
     name: "Hector's Poutine",
     place: "Angry Dog",

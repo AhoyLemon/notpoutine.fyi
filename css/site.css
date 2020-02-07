@@ -1,8 +1,7 @@
 @charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 a,
 abbr,
@@ -97,13 +96,11 @@ xmp {
   border: 0;
   margin: 0;
   padding: 0;
-  font-size: 100%;
-}
+  font-size: 100%; }
 
 html,
 body {
-  height: 100%;
-}
+  height: 100%; }
 
 article,
 aside,
@@ -117,272 +114,309 @@ main,
 menu,
 nav,
 section {
-  display: block;
-}
+  display: block; }
 
 b,
 strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 img {
   color: transparent;
   font-size: 0;
   vertical-align: middle;
-  -ms-interpolation-mode: bicubic;
-}
+  -ms-interpolation-mode: bicubic; }
 
 ul,
 ol {
-  list-style: none;
-}
+  list-style: none; }
 
 li {
-  display: list-item;
-}
+  display: list-item; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 th,
 td,
 caption {
   font-weight: normal;
   vertical-align: top;
-  text-align: left;
-}
+  text-align: left; }
 
 q {
-  quotes: none;
-}
+  quotes: none; }
 
 q:before,
 q:after {
   content: "";
-  content: none;
-}
+  content: none; }
 
 sub,
 sup,
 small {
-  font-size: 75%;
-}
+  font-size: 75%; }
 
 sub,
 sup {
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
 svg {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 a {
   text-decoration: none;
-  color: #4885ed;
-}
-a:hover {
-  border-bottom: 0.05em solid currentColor;
-}
+  color: #4885ed; }
+  a:hover {
+    border-bottom: 0.05em solid currentColor; }
 
 [v-cloak] {
-  display: none !important;
-}
+  display: none !important; }
 
 h1 {
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 h2 {
-  font-size: 1.5rem;
-}
+  font-size: 1.5rem; }
 
 h3 {
-  font-size: 1.17rem;
-}
+  font-size: 1.17rem; }
 
 h4 {
-  font-size: 1.12rem;
-}
+  font-size: 1.12rem; }
 
 h5 {
-  font-size: 0.83rem;
-}
+  font-size: .83rem; }
 
 h6 {
-  font-size: 0.75rem;
-}
+  font-size: .75rem; }
 
 body {
   background: #eee;
   color: #212121;
   font-family: "EB Garamond", serif;
   background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#222));
+  background: -webkit-linear-gradient(top, #444, #222);
   background: -o-linear-gradient(top, #444, #222);
   background: linear-gradient(to bottom, #444, #222);
-  background-attachment: fixed;
-}
+  background-attachment: fixed; }
 
 @media (max-width: 600px) {
   body {
     background-attachment: initial;
-    background: #222;
-  }
-}
+    background: #222; } }
+
 .crimes {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
   gap: 40px;
-  padding: 20px;
-}
-.crimes .crime {
-  padding: 20px;
-  background: #fff;
-  font-size: 22px;
-  border-radius: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.crimes .crime .details {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 85px;
-  grid-template-columns: 1fr 1fr 1fr 85px;
-}
-.crimes .crime .details .name, .crimes .crime .details .price {
-  font-size: 140%;
-}
-.crimes .crime .details .name {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  white-space: nowrap;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-  position: relative;
-  z-index: 3;
-}
-.crimes .crime .details .name:hover {
-  overflow: visible;
-  background: #fff;
-  padding-right: 0.35em;
-}
-.crimes .crime .details abbr {
-  text-decoration: none;
-  cursor: help;
-  white-space: nowrap;
-}
-.crimes .crime .details abbr sup {
-  font-size: 80%;
-  padding-right: 0.1em;
-}
-.crimes .crime .details figure {
-  -ms-grid-column-span: 4;
-  grid-column: span 4;
-  margin: 20px -20px;
-  height: 14em;
-  background-size: cover;
-  background-position: center;
-}
-.crimes .crime .details .description {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  padding-right: 1em;
-}
-.crimes .crime .details .description p:before {
-  content: "“";
-}
-.crimes .crime .details .description p:after {
-  content: "”";
-}
-.crimes .crime .details .description p.empty {
-  font-style: italic;
-}
-.crimes .crime .details .description p.empty:before, .crimes .crime .details .description p.empty:after {
-  content: "";
-}
-.crimes .crime .details .requirements li.yes:before {
-  content: "✔️";
-  padding-right: 0.5em;
-}
-.crimes .crime .details .requirements li.no:before {
-  content: "❌";
-  padding-right: 0.5em;
-  text-decoration: none;
-}
-.crimes .crime .location {
-  width: 100%;
-  padding-top: 20px;
-}
-.crimes .crime .location .place-name, .crimes .crime .location .region {
-  display: inline-block;
-}
-.crimes .crime .location .place-name {
-  font-weight: 700;
-}
-.crimes .crime .location .region:before {
-  content: " | ";
-}
+  padding: 20px; }
+  .crimes .crime {
+    padding: 20px;
+    background: #fff;
+    font-size: 22px;
+    border-radius: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .crimes .crime .details {
+      width: 100%;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 1fr 1fr 85px;
+      grid-template-columns: 1fr 1fr 1fr 85px; }
+      .crimes .crime .details .name, .crimes .crime .details .price {
+        font-size: 140%; }
+      .crimes .crime .details .name {
+        -ms-grid-column-span: 3;
+        grid-column: span 3;
+        white-space: nowrap;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        position: relative;
+        z-index: 3; }
+        .crimes .crime .details .name:hover {
+          overflow: visible;
+          background: #fff;
+          padding-right: 0.35em; }
+      .crimes .crime .details abbr {
+        text-decoration: none;
+        cursor: help;
+        white-space: nowrap; }
+        .crimes .crime .details abbr sup {
+          font-size: 80%;
+          padding-right: 0.1em; }
+      .crimes .crime .details figure {
+        -ms-grid-column-span: 4;
+        grid-column: span 4;
+        margin: 20px -20px;
+        height: 14em;
+        background-size: cover;
+        background-position: center; }
+      .crimes .crime .details .description {
+        -ms-grid-column-span: 3;
+        grid-column: span 3;
+        padding-right: 1em; }
+        .crimes .crime .details .description p:before {
+          content: '“'; }
+        .crimes .crime .details .description p:after {
+          content: '”'; }
+        .crimes .crime .details .description p.empty {
+          font-style: italic; }
+          .crimes .crime .details .description p.empty:before, .crimes .crime .details .description p.empty:after {
+            content: ''; }
+      .crimes .crime .details .requirements li.yes:before {
+        content: '✔️';
+        padding-right: 0.5em; }
+      .crimes .crime .details .requirements li.no:before {
+        content: '❌';
+        padding-right: 0.5em;
+        text-decoration: none; }
+    .crimes .crime .location {
+      width: 100%;
+      padding-top: 20px; }
+      .crimes .crime .location .place-name, .crimes .crime .location .region {
+        display: inline-block; }
+      .crimes .crime .location .place-name {
+        font-weight: 700; }
+      .crimes .crime .location .region:before {
+        content: ' | '; }
 
 @media (max-width: 430px) {
   .crimes {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-  .crimes .crime {
-    font-size: 18px;
-  }
-  .crimes .crime .details figure {
-    height: 50vw;
-  }
-}
+    grid-template-columns: 1fr; }
+    .crimes .crime {
+      font-size: 18px; }
+      .crimes .crime .details figure {
+        height: 50vw; } }
+
+.scorecard-outer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 4;
+  background: rgba(33, 33, 33, 0.7); }
+  .scorecard-outer .scorecard {
+    background: #eee;
+    width: 100%;
+    max-width: 666px;
+    padding: 40px;
+    position: relative; }
+  .scorecard-outer .header-line {
+    font-size: 250%;
+    text-align: center; }
+  .scorecard-outer table.requirements {
+    margin-top: 20px;
+    margin-bottom: 1em; }
+    .scorecard-outer table.requirements td {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid rgba(33, 33, 33, 0.15); }
+    .scorecard-outer table.requirements tr:first-child td {
+      padding-top: 0; }
+    .scorecard-outer table.requirements .requirement-name {
+      font-size: 120%;
+      font-weight: 700; }
+    .scorecard-outer table.requirements .good, .scorecard-outer table.requirements .bad {
+      font-weight: 100;
+      vertical-align: middle;
+      width: 80px;
+      text-align: center; }
+    .scorecard-outer table.requirements td.good, .scorecard-outer table.requirements td.bad {
+      font-size: 40px; }
+    .scorecard-outer table.requirements th.good, .scorecard-outer table.requirements th.bad {
+      text-transform: uppercase;
+      font-size: 80%;
+      font-weight: 700; }
+    .scorecard-outer table.requirements .good {
+      color: #116611; }
+    .scorecard-outer table.requirements .bad {
+      color: #661111; }
+  .scorecard-outer dl {
+    margin-bottom: 1em; }
+    .scorecard-outer dl dt {
+      font-size: 120%;
+      font-weight: 700; }
+    .scorecard-outer dl.list span:after {
+      content: ', '; }
+    .scorecard-outer dl.list span:last-child:after {
+      content: ''; }
+    .scorecard-outer dl .big-number {
+      font-size: 180%; }
+    .scorecard-outer dl .footnote {
+      font-size: 80%; }
+  .scorecard-outer .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border: 1px solid currentColor;
+    font-family: "EB Garamond", serif;
+    color: #4885ed;
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    outline: none; }
+    .scorecard-outer .close:hover, .scorecard-outer .close:focus {
+      background: #4885ed;
+      color: #eee; }
+    .scorecard-outer .close:active {
+      background: #212121; }
+
 .site-header {
   padding-left: 20px;
-  padding-right: 20px;
-}
-.site-header h1 {
-  margin-top: 0.5em;
-  font-size: 13.5vw;
-  font-weight: 100;
-  text-align: center;
-  color: #eee;
-  text-shadow: 0.05em 0.05em 0.05em #212121;
-  line-height: 100%;
-  color: rgba(255, 255, 255, 0.5);
-  text-shadow: none;
-}
-.site-header nav.questions {
-  text-align: right;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-.site-header nav.questions a {
-  font-size: 24px;
-  margin-left: 2em;
-  cursor: pointer;
-}
+  padding-right: 20px; }
+  .site-header h1 {
+    margin-top: 0.5em;
+    font-size: 13.5vw;
+    font-weight: 100;
+    text-align: center;
+    color: #eee;
+    text-shadow: 0.05em 0.05em 0.05em #212121;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: none; }
+  .site-header nav.questions {
+    text-align: right;
+    margin-top: 2em;
+    margin-bottom: 2em; }
+    .site-header nav.questions a {
+      font-size: 24px;
+      margin-left: 2em;
+      cursor: pointer; }
 
 aside.explainer {
   font-size: 22px;
@@ -390,18 +424,13 @@ aside.explainer {
   color: #eee;
   max-width: 42em;
   padding: 20px;
-  margin: 3em auto;
-}
-aside.explainer p {
-  margin-bottom: 1em;
-}
+  margin: 3em auto; }
+  aside.explainer p {
+    margin-bottom: 1em; }
 
 @media (max-width: 500px) {
   .site-header h1 {
     margin-top: 1em;
-    font-size: 12.5vw;
-  }
+    font-size: 12.5vw; }
   .site-header nav.questions {
-    text-align: center;
-  }
-}
+    text-align: center; } }

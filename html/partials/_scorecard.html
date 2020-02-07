@@ -1,0 +1,29 @@
+
+<div class="scorecard-outer">
+  <div class="scorecard">
+    <dl>
+      <dt>Fries</dt>
+      <dd><span>Good: </span><strong>{{computedScores.fries.good}}</strong><br/><span>Bad: </span><strong>{{computedScores.fries.bad}}</strong></dd>
+    </dl>
+    <dl>
+      <dt>Curds</dt>
+      <dd><span>Good: </span><strong>{{computedScores.curds.good}}</strong><br/><span>Bad: </span><strong>{{computedScores.curds.bad}}</strong></dd>
+    </dl>
+    <dl>
+      <dt>Gravy</dt>
+      <dd><span>Good: </span><strong>{{computedScores.gravy.good}}</strong><br/><span>Bad: </span><strong>{{computedScores.gravy.bad}}</strong></dd>
+    </dl>
+    <dl>
+      <dt>Countries</dt>
+      <dd><span v-for="country in computedScores.countryList">{{country}}</span></dd>
+    </dl>
+    <dl>
+      <dt>US States</dt>
+      <dd><span v-for="state in computedScores.stateList">{{state}}</span></dd>
+    </dl>
+    <dl>
+      <dt>Average price</dt>
+      <dd><span>{{computedScores.averagePrice.toFixed(2)}}</span></dd>
+    </dl>
+  </div>
+</div>
