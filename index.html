@@ -8,7 +8,7 @@
     <link href="css/site.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="a running collection of menu items which claim to be poutine, but aren't.">
-    <meta http-equiv="last-modified" content="2020-01-07@08:37:01">
+    <meta http-equiv="last-modified" content="2020-01-07@09:02:24">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
@@ -74,6 +74,8 @@
               <div class="place-name">{{crime.place}} </div>&nbsp;
               <div class="region" v-if="crime.city &amp;&amp; crime.state"><span class="city">{{crime.city}}, </span><span class="state">{{crime.state}}</span></div>
               <div class="region" v-else-if="crime.city &amp;&amp; crime.country"><span class="city">{{crime.city}}, </span><span class="country">{{crime.country}}</span></div>
+              <div class="region" v-else-if="crime.city"><span class="city">{{crime.city}}</span></div>
+              <div class="region" v-else-if="crime.country"><span class="city">{{crime.country}}</span></div>
             </div>
           </article>
         </template>
@@ -144,7 +146,7 @@
         const testing = false;
         
       </script>
-      <script src="js/min/site.min.js?updated2020-01-07@08:37:01"></script>
+      <script src="js/min/site.min.js?updated2020-01-07@09:02:24"></script>
       <!-- Global site tag (gtag.js) - Google Analytics-->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15129990-34"></script>
       <script>

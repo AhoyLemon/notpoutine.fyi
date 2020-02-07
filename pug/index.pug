@@ -64,6 +64,10 @@ html(lang="en")
               .region(v-else-if="crime.city && crime.country")
                 span.city {{crime.city}}, 
                 span.country {{crime.country}}
+              .region(v-else-if="crime.city")
+                span.city {{crime.city}}
+              .region(v-else-if="crime.country")
+                span.city {{crime.country}}
 
       aside.explainer#Explainer
         p 
