@@ -35,23 +35,6 @@ const crimes = [
       gravy: false
     },
   },
-
-  {
-    name:        "Maple Shack Poutine",
-    place:       "Jericho Center Country Store",
-    pic:         "maple-shack.jpg",
-    city:        "Jericho",
-    state:       "VT",
-    country:     "US",
-    price:       12.60,
-    map:         "https://goo.gl/maps/gYZcT9YDxgYLzKMGA",
-    description: "fries covered in VT maple syrup, cheddar cheese curds, grilled onions, and bacon bits. A taste of bliss",
-    requirements: {
-      fries: true,
-      curds: true,
-      gravy: false
-    },
-  },
   
   {
     name:        "Punjabi Poutine",
@@ -85,6 +68,23 @@ const crimes = [
       curds:     false,
       gravy:     false
     }
+  },
+
+  {
+    name:        "Maple Shack Poutine",
+    place:       "Jericho Center Country Store",
+    pic:         "maple-shack.jpg",
+    city:        "Jericho",
+    state:       "VT",
+    country:     "US",
+    price:       12.60,
+    map:         "https://goo.gl/maps/gYZcT9YDxgYLzKMGA",
+    description: "fries covered in VT maple syrup, cheddar cheese curds, grilled onions, and bacon bits. A taste of bliss",
+    requirements: {
+      fries: true,
+      curds: true,
+      gravy: false
+    },
   },
 
   {

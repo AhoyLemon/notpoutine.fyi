@@ -1,4 +1,4 @@
-$cardsize: 430px;
+$cardsize: 420px;
 
 .crimes {
   display:grid; grid-template-columns: repeat(auto-fill, minmax($cardsize, 1fr)); gap: $gap; padding:$padding;
