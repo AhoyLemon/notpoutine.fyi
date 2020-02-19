@@ -205,6 +205,24 @@ const crimes = [
       gravy:     true
     }
   },
+
+  {
+    name: "Pizza Poutine",
+    place: "Boston Pizza",
+    pic: "boston-pizza.jpg",
+    city: "Edmonton",
+    state: "AB",
+    country: "Canada",
+    chain: true,
+    map: "https://goo.gl/maps/ezdVdPAdQfv5L7eH9",
+    price: 12.00,
+    description: "Crispy French fries seasoned with pizza spice, tossed with Canadian pizza mozzarella, sliced pepperoni, and oven‑baked to perfection. Served with a side of our signature pizza gravy.",
+    requirements: {
+      fries: true,
+      curds: false,
+      gravy: false
+    } 
+  },
   
   {
     name: "Hector's Poutine",
@@ -288,6 +306,23 @@ const crimes = [
           fries: true,
           curds: false,
           gravy: true
+    }
+  },
+
+  {
+    name:        "Mexican Poutine",
+    place:       "The Crack Shack",
+    pic:         "crack-mexican.jpg",
+    city:        "San Diego",
+    state:       "CA",
+    country:     "US",
+    map:         "https://goo.gl/maps/xSyKb9ZPF9MMARe16",
+    price:       13.25,
+    description: "schmaltz fries, pollo asado, jalapeño cheese wiz",
+    requirements: {
+      fries:     true,
+      curds:     false,
+      gravy:     false
     }
   },
 
