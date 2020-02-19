@@ -206,6 +206,8 @@ const crimes = [
     }
   },
 
+
+  /* Maybe legal
   {
     name: "Pizza Poutine",
     place: "Boston Pizza",
@@ -223,6 +225,7 @@ const crimes = [
       gravy: false
     } 
   },
+  */
   
   {
     name: "Hector's Poutine",
