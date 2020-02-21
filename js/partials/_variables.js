@@ -262,6 +262,23 @@ const crimes = [
   },
 
   {
+    name:        "Poutine",
+    place:       "Senate OTR",
+    pic:         "senate-otr.jpg",
+    city:        "Cincinnati",
+    state:       "OH",
+    country:     "US",
+    map:         "https://goo.gl/maps/RdJ4eZdJUUnSRReU7",
+    price:       19.81,
+    description: "french fries, local cheese curds, short ribs + local free range egg",
+    requirements: {
+      fries: true,
+      curds: true,
+      gravy: false
+    } 
+  },
+
+  {
     name:        "Poutine x Cod Roe Sauce",
     place:       "Becker's",
     pic:         "becker-cod-roe.jpg",
