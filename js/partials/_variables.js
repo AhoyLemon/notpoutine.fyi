@@ -3,15 +3,32 @@ const siteURL = "";
 const crimes = [
 
   {
-    name:        "Butter Chicken Poutine",
-    place:       "Bliss",
-    pic:         "bliss-butter-chicken.jpg",
-    city:        "Quesnel",
+    name:        "Japayoki Poutine",
+    place:       "Bao Down OV",
+    pic:         "japayoki-baodown.jpg",
+    city:        "Vancouver",
     state:       "BC",
     country:     "Canada",
-    map:         "https://goo.gl/maps/gSMQcN5b8ipnkemaA",
-    price:       12.00,
-    description: "Fries, Butter Chicken and mozza",
+    map:         "https://g.page/baodownov?share",
+    price:       15,
+    description: "Chicken karaage, sprouts, furikake, Japanese curry sauce, sweet tamari, jalapeno",
+    requirements: {
+          fries: true,
+          curds: false,
+          gravy: false
+    }
+  },
+
+  {
+    name:        "Sweet Poutine",
+    place:       "Robson's Fries",
+    pic:         "sweet-poutine-japan.jpg",
+    city:        "Tokyo",
+    //state:       "BC",
+    country:     "Japan",
+    map:         "https://goo.gl/maps/NwE6XjnYybofkDqo8",
+    price:       6.47,
+    description: "We've topped it with custard loaded with eggs, mixed berries, and pure Canadian maple syrup. And of course, plenty of cheese!",
     requirements: {
       fries:     true,
       curds:     false,
@@ -35,6 +52,57 @@ const crimes = [
       gravy: false
     },
   },
+
+  {
+    name:        "Pepperoni Pizza Poutine",
+    place:       "LaFork! Poutine & Crêpes",
+    pic:         "lafork-pepperoni.jpg",
+    city:        "Dearborn",
+    state:       "MI",
+    country:     "US",
+    map:         "https://g.page/LaFork?share",
+    price:       11.85,
+    description: "fresh cut fries, mozzarella cheese, marinara sauce and pepperoni",
+    requirements: {
+      fries:     true,
+      curds:     false,
+      gravy:     false
+    }
+  },
+
+  {
+    name:        "Butter Chicken Poutine",
+    place:       "Bliss",
+    pic:         "bliss-butter-chicken.jpg",
+    city:        "Quesnel",
+    state:       "BC",
+    country:     "Canada",
+    map:         "https://goo.gl/maps/gSMQcN5b8ipnkemaA",
+    price:       12.00,
+    description: "Fries, Butter Chicken and mozza",
+    requirements: {
+      fries:     true,
+      curds:     false,
+      gravy:     false
+    }
+  },
+
+  {
+    name:        "Broadway Poutine",
+    place:       "Broadway Pizza",
+    pic:         "broadway-pizza.jpg",
+    city:        "Minneapolis",
+    state:       "MN",
+    country:     "US",
+    map:         "https://goo.gl/maps/EEczXVf2tCoj2tRA7",
+    price:       13.05,
+    description: "crispy tots and handmade battered cheddar curds smothered with smoky cheese sauce, zesty herb seasoned tomatoes, jalapeno bacon and more cheddar on top!",
+    requirements: {
+      fries:     false,
+      curds:     false,
+      gravy:     false
+    }
+  },
   
   {
     name:        "Punjabi Poutine",
@@ -54,23 +122,6 @@ const crimes = [
   },
 
   {
-    name:        "Sweet Poutine",
-    place:       "Robson's Fries",
-    pic:         "sweet-poutine-japan.jpg",
-    city:        "Tokyo",
-    //state:       "BC",
-    country:     "Japan",
-    map:         "https://goo.gl/maps/NwE6XjnYybofkDqo8",
-    price:       6.47,
-    description: "We've topped it with custard loaded with eggs, mixed berries, and pure Canadian maple syrup. And of course, plenty of cheese!",
-    requirements: {
-      fries:     true,
-      curds:     false,
-      gravy:     false
-    }
-  },
-
-  {
     name:        "Maple Shack Poutine",
     place:       "Jericho Center Country Store",
     pic:         "maple-shack.jpg",
@@ -85,40 +136,6 @@ const crimes = [
       curds: true,
       gravy: false
     },
-  },
-
-  {
-    name:        "Broadway Poutine",
-    place:       "Broadway Pizza",
-    pic:         "broadway-pizza.jpg",
-    city:        "Minneapolis",
-    state:       "MN",
-    country:     "US",
-    map:         "https://goo.gl/maps/EEczXVf2tCoj2tRA7",
-    price:       13.05,
-    description: "crispy tots and handmade battered cheddar curds smothered with smoky cheese sauce, zesty herb seasoned tomatoes, jalapeno bacon and more cheddar on top!",
-    requirements: {
-      fries:     false,
-      curds:     false,
-      gravy:     false
-    }
-  },
-
-  {
-    name:        "Pepperoni Pizza Poutine",
-    place:       "LaFork! Poutine & Crêpes",
-    pic:         "lafork-pepperoni.jpg",
-    city:        "Dearborn",
-    state:       "MI",
-    country:     "US",
-    map:         "https://g.page/LaFork?share",
-    price:       11.85,
-    description: "fresh cut fries, mozzarella cheese, marinara sauce and pepperoni",
-    requirements: {
-      fries:     true,
-      curds:     false,
-      gravy:     false
-    }
   },
 
   {
@@ -153,6 +170,23 @@ const crimes = [
           curds: false,
           gravy: true
     }
+  },
+
+  {
+    name:        "Tater Tot Poutine",
+    place:       "Bostonia Public House",
+    pic:         "bostonia-tots.jpg",
+    city:        "Boston",
+    state:       "MA",
+    country:     "US",
+    map:         "https://g.page/BostoniaPublicHouse?share",
+    price:       14.77,
+    description: "crispy tater tots, black pepper brown gravy, melted cheese",
+    requirements: {
+      fries: false,
+      curds: false,
+      gravy: true
+    } 
   },
 
   {
