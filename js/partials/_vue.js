@@ -18,7 +18,7 @@ var app = new Vue({
     computedScores() {
       let self = this;
 
-      scores = {
+      let scores = {
         fries: {
           good: 0,
           bad: 0
