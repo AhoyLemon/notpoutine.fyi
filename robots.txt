@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /Art%20Assets
+Disallow: /pug
+
+sitemap: https://notpoutine.fyi/sitemap.xml
