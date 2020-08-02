@@ -3,6 +3,23 @@ const siteURL = "";
 const crimes = [
 
   {
+    name:        "Greek Poutine",
+    place:       "Highland House",
+    pic:         "highland-greek-poutine.jpg",
+    city:        "Highland",
+    state:       "MI",
+    country:     "US",
+    map:         "https://g.page/baodownov?share",
+    price:       12.06,
+    description: "French fries tossed with feta cheese, capers and fresh oregano topped with lemon gravy.",
+    requirements: {
+          fries: true,
+          curds: false,
+          gravy: false
+    }
+  },
+
+  {
     name:        "Japayoki Poutine",
     place:       "Bao Down OV",
     pic:         "japayoki-baodown.jpg",
