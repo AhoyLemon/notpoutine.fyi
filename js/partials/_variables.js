@@ -9,7 +9,7 @@ const crimes = [
     city:        "Highland",
     state:       "MI",
     country:     "US",
-    map:         "https://g.page/baodownov?share",
+    map:         "https://goo.gl/maps/DjNjJLicSdpZdTSx7",
     price:       12.06,
     description: "French fries tossed with feta cheese, capers and fresh oregano topped with lemon gravy.",
     requirements: {
