@@ -181,7 +181,7 @@ const crimes = [
     country:     "US",
     map:         "https://maps.app.goo.gl/LTWUCFHRkiDtnpLc6",
     price:       15.94,
-    description: "Pork belly, Fries, Tillamook White Cheddar Cheese Curds Demi Glaze, Wild Mushrooms",
+    description: "Pork belly, Fries, Fried Tillamook White Cheddar Cheese Curds, Demi Glaze, Wild Mushrooms",
     requirements: {
           fries: true,
           curds: false,
