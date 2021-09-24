@@ -3,6 +3,57 @@ const siteURL = "";
 const crimes = [
 
   {
+    name:        "Tandoori Chicken Poutine",
+    place:       "Chauhan Ale and Masala House",
+    pic:         "chauhan-tandoori.jpg",
+    city:        "Nashville",
+    state:       "TN",
+    country:     "US",
+    map:         "https://goo.gl/maps/buHXY1yNdDT2Frt17",
+    price:       17.72,
+    description: "tandoori chicken, makhani sauce, kenny's cheese curds, masala fries",
+    requirements: {
+          fries: true,
+          curds: false,
+          gravy: false
+    }
+  },
+
+  {
+    name:        "Farm-To-Table Poutine",
+    place:       "Wise Acre",
+    pic:         "wiseacre.jpg",
+    city:        "Minneapolis",
+    state:       "MN",
+    country:     "US",
+    price:       16.37,
+    map:         "https://goo.gl/maps/gYZcT9YDxgYLzKMGA",
+    description: "home fries with sautéed farm vegetables, house-made breakfast sausage, Castle Rock Organic Dairy cheese curds, poached eggs, and Granny Dell's black pepper gravy",
+    requirements: {
+      fries: false,
+      curds: true,
+      gravy: false
+    },
+  },
+
+  {
+    name:        "Poutine Dog",
+    place:       "New York Fries",
+    pic:         "nyfries-poutinedog.jpg",
+    city:        "Woodstock",
+    state:       "ON",
+    country:     "CA",
+    map:         "https://goo.gl/maps/q6yydwtVNCS7vEsq8",
+    price:       7.49,
+    description: "Our 1/4 pound premium hot dog lovingly covered in our world renowned poutine. To try it, is to love it.",
+    requirements: {
+          fries: false,
+          curds: true,
+          gravy: true
+    }
+  },
+
+  {
     name:        "Greek Poutine",
     place:       "Highland House",
     pic:         "highland-greek-poutine.jpg",
@@ -54,20 +105,20 @@ const crimes = [
   },
 
   {
-    name:        "Farm-To-Table Poutine",
-    place:       "Wise Acre",
-    pic:         "wiseacre.jpg",
-    city:        "Minneapolis",
-    state:       "MN",
+    name:        "Plant-based Poutine",
+    place:       "Sunnyside Diner",
+    pic:         "sunnyside-diner-plant.jpg",
+    city:        "Oklahoma City",
+    state:       "OK",
     country:     "US",
-    price:       16.37,
-    map:         "https://goo.gl/maps/gYZcT9YDxgYLzKMGA",
-    description: "home fries with sautéed farm vegetables, house-made breakfast sausage, Castle Rock Organic Dairy cheese curds, poached eggs, and Granny Dell's black pepper gravy",
+    map:         "https://g.page/eatatsunnysidemidtown?share",
+    price:       13.91, 
+    description: "Fries, Daiya cheese, Gravy, tofu, chorizo, jalapeno & topped with green onions",
     requirements: {
-      fries: false,
-      curds: true,
-      gravy: false
-    },
+          fries: true,
+          curds: false,
+          gravy: true
+    }
   },
 
   {
