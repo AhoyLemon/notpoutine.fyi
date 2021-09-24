@@ -251,8 +251,12 @@ body {
 .crimes .crime {
   padding: 20px;
   background: #fff;
-  font-size: 22px;
+  font-size: 20px;
   border-radius: 3px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,13 +350,16 @@ body {
   content: " | ";
 }
 
-@media (max-width: 420px) {
+@media (max-width: 583px) {
   .crimes {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
   .crimes .crime {
     font-size: 18px;
+  }
+  .crimes .crime .details .name, .crimes .crime .details .price {
+    font-size: 1.25em;
   }
   .crimes .crime .details figure {
     height: 50vw;
