@@ -42,7 +42,7 @@ const crimes = [
     pic:         "nyfries-poutinedog.jpg",
     city:        "Woodstock",
     state:       "ON",
-    country:     "CA",
+    country:     "Canada",
     map:         "https://goo.gl/maps/q6yydwtVNCS7vEsq8",
     price:       7.49,
     description: "Our 1/4 pound premium hot dog lovingly covered in our world renowned poutine. To try it, is to love it.",
