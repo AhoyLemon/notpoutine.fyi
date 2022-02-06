@@ -15,7 +15,9 @@ $cardsize: 420px;
       abbr { text-decoration: none; cursor: help; white-space: nowrap;
         sup { font-size:80%; padding-right: 0.1em; }
       }
-      figure { grid-column: span 4; margin: $padding (0 - $padding); height:14em;  background-size: cover; background-position: center; }
+      figure { grid-column: span 4; margin: $padding (0 - $padding); height:16em;  background-size: cover; background-position: center;
+        img { height: 100%; width:100%; object-fit: cover; object-position: center; }
+      }
 
       .description { grid-column: span 3; padding-right: 1em;
         p {

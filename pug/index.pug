@@ -40,8 +40,8 @@ html(lang="en")
                 abbr(title="all prices listed in Canadian dollars.") 
                   sup $
                   span {{crime.price.toFixed(2)}} 
-              figure(v-bind:style="{ backgroundImage: 'url(img/crimes/'+crime.pic+')' }")
-                //img(:src="'img/crimes/'+crime.pic")
+              figure
+                img(:src="'img/crimes/'+crime.pic" loading="lazy")
               .description
                 p.empty(v-if="!crime.description") no description given
                 p(v-if="crime.description") {{crime.description}}

@@ -3,6 +3,23 @@ const siteURL = "https://ahoylemon.github.io/notpoutine.fyi";
 const crimes = [
 
   {
+    name:        "Tater Tot Poutine",
+    place:       "Precinct 10",
+    pic:         "precinct-10.jpg",
+    city:        "Weymouth",
+    state:       "MA",
+    country:     "US",
+    map:         "https://www.google.com/maps/place/Precinct+10/@42.2038789,-70.9543861,15z/data=!4m5!3m4!1s0x0:0x4ccb77aa9f5cb2c4!8m2!3d42.2038789!4d-70.9543861",
+    price:       20.42,
+    description: "crunchy tots, red wine demi glace, 10-cheese sauce, house smoked pulled pork, scallions, truffle oil",
+    requirements: {
+          fries: false,
+          curds: false,
+          gravy: true
+    }
+  },
+
+  {
     name:        "Tandoori Chicken Poutine",
     place:       "Chauhan Ale and Masala House",
     pic:         "chauhan-tandoori.jpg",

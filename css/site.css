@@ -306,9 +306,17 @@ body {
   -ms-grid-column-span: 4;
   grid-column: span 4;
   margin: 20px -20px;
-  height: 14em;
+  height: 16em;
   background-size: cover;
   background-position: center;
+}
+.crimes .crime .details figure img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .crimes .crime .details .description {
   -ms-grid-column-span: 3;
