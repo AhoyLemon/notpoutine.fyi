@@ -3,6 +3,23 @@ const siteURL = "https://ahoylemon.github.io/notpoutine.fyi";
 const crimes = [
 
   {
+    name:        "Hypernova Scotia",
+    place:       "The Lobster Shanty",
+    pic:         "hypernova.jpg",
+    city:        "Salem",
+    state:       "MA",
+    country:     "US",
+    map:         "https://www.google.com/maps/place/The+Lobster+Shanty/@42.5203128,-70.8946345,15z/data=!4m5!3m4!1s0x0:0x20921dee29f4ddd5!8m2!3d42.5203128!4d-70.8946345",
+    price:       69.14,
+    description: `A big ol' serving of our amazing Nova Scotia poutine topped with 6 oz. of fried scallops AND 6 oz. of butter poached lobster meat; a MONSTER DISH" (Submitter's note: it has New England clam chowder poured on top)`,
+    requirements: {
+          fries: true,
+          curds: true,
+          gravy: false
+    }
+  },
+
+  {
     name:        "Tater Tot Poutine",
     place:       "Precinct 10",
     pic:         "precinct-10.jpg",
