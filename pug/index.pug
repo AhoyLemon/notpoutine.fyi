@@ -48,13 +48,13 @@ html(lang="en")
               ul.requirements
                 li.yes(v-if="crime.requirements.fries") fries
                 li.no( v-if="!crime.requirements.fries") 
-                  abbr(title="french fries (not tots or potato wedges)") fries
+                  abbr(title="poutine must have french fries (not tots or potato wedges)") fries
                 li.yes(v-if="crime.requirements.curds") curds
                 li.no( v-if="!crime.requirements.curds") 
-                  abbr(title="fresh (not fried) cheese curds") curds
+                  abbr(title="poutine must have fresh (not fried) cheese curds") curds
                 li.yes(v-if="crime.requirements.gravy") gravy
                 li.no( v-if="!crime.requirements.gravy") 
-                  abbr(title="brown gravy") gravy
+                  abbr(title="poutine must have brown gravy") gravy
             .location
               .place-name {{crime.place}} 
               | &nbsp;

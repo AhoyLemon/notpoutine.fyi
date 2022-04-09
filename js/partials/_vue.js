@@ -83,7 +83,10 @@ var app = new Vue({
       return scores;
     }
   },
-
+  beforeMount() {
+    const self = this;
+    self.crimes = shuffle(self.crimes);
+  },
   mounted: function() {
 
   }
