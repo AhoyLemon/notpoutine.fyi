@@ -20,6 +20,23 @@ const crimes = [
   },
 
   {
+    name:        "Sweet Potato Poutine",
+    place:       "The Blue Barn (Minnesota State Fair)",
+    pic:         "statefair-sweetpotato.jpg",
+    city:        "Falcon Heights",
+    state:       "MN",
+    country:     "US",
+    map:         "https://goo.gl/maps/VMxDdiqLRMgyKGXC8",
+    price:       21.99,
+    description: `Sweet potato waffle fries topped with cheese curds, Beyond chorizo sausage, turmeric gravy, pico de gallo and fresh cilantro. (Vegetarian)`,
+    requirements: {
+          fries: false,
+          curds: true,
+          gravy: false
+    }
+  },
+
+  {
     name:        "Tater Tot Poutine",
     place:       "Precinct 10",
     pic:         "precinct-10.jpg",
