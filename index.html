@@ -8,7 +8,7 @@
     <link href="css/site.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="a running collection of menu items which claim to be poutine, but aren't.">
-    <meta http-equiv="last-modified" content="2022-04-10T14:42:00.867Z">
+    <meta http-equiv="last-modified" content="2022-12-01T03:24:48.007Z">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
@@ -50,7 +50,7 @@
               </div>
             </div>
           </article>
-          <article class="crime">
+          <article class="crime" :crime-name="crime.name" :crime-place="crime.place" :crime-city="crime.city" :crime-country="crime.country"><a v-if="crime.place" :name="crime.place"></a>
             <div class="details">
               <h2 class="name">{{crime.name}}</h2>
               <div class="price"> <abbr title="all prices listed in Canadian dollars."> <sup>$</sup><span>{{crime.price.toFixed(2)}} </span></abbr></div>
@@ -144,7 +144,7 @@
         const testing = false;
         
       </script>
-      <script src="js/min/site.min.js?updated2022-04-10T14:42:00.867Z"></script>
+      <script src="js/min/site.min.js?updated2022-12-01T03:24:48.007Z"></script>
       <!-- Global site tag (gtag.js) - Google Analytics-->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15129990-34"></script>
       <script>

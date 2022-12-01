@@ -89,6 +89,21 @@ var app = new Vue({
   },
   mounted: function() {
 
+    // Scroll the the appropriate crime, if any.
+    let queryParams = new URLSearchParams(window.location.search);
+    if (queryParams.get("place")) {
+      const crimePlace = queryParams.get("place");
+      document.querySelector('[crime-place="'+crimePlace+'"]').scrollIntoView();
+    } else if (queryParams.get("name")) {
+      const crimeName = queryParams.get("name");
+      document.querySelector('[crime-name="'+crimeName+'"]').scrollIntoView();
+    } else if (queryParams.get("city")) {
+      const crimeCity = queryParams.get("city");
+      document.querySelector('[crime-city="'+crimeCity+'"]').scrollIntoView();
+    } else if (queryParams.get("country")) {
+      const crimeCountry = queryParams.get("country");
+      document.querySelector('[crime-country="'+crimeCountry+'"]').scrollIntoView();
+    }
   }
 
 });
