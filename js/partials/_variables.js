@@ -358,27 +358,6 @@ const crimes = [
       gravy:     true
     }
   },
-
-
-  /* Maybe legal
-  {
-    name: "Pizza Poutine",
-    place: "Boston Pizza",
-    pic: "boston-pizza.jpg",
-    city: "Edmonton",
-    state: "AB",
-    country: "Canada",
-    chain: true,
-    map: "https://goo.gl/maps/ezdVdPAdQfv5L7eH9",
-    price: 12.00,
-    description: "Crispy French fries seasoned with pizza spice, tossed with Canadian pizza mozzarella, sliced pepperoni, and oven‑baked to perfection. Served with a side of our signature pizza gravy.",
-    requirements: {
-      fries: true,
-      curds: false,
-      gravy: false
-    } 
-  },
-  */
   
   {
     name: "Hector's Poutine",
@@ -436,7 +415,6 @@ const crimes = [
     place:       "Becker's",
     pic:         "becker-cod-roe.jpg",
     city:        "Tokyo",
-    //state:       "BC",
     country:     "Japan",
     map:         "https://goo.gl/maps/j1pyEgKzrquqTtTU6",
     price:       4.07,
@@ -460,6 +438,23 @@ const crimes = [
     description: "Caramelized pineapple, candied peppered pig candy.",
     requirements: {
       fries:     true,
+      curds:     false,
+      gravy:     true
+    }
+  },
+
+  {
+    name:        "Tater Tot Barrage Poutine",
+    place:       "Elite Brewing & Cidery",
+    pic:         "tater-tot-barrage.jpg",
+    city:        "Calgary",
+    state:       "Alberta",
+    country:     "Canada",
+    map:         "https://goo.gl/maps/RBF3ZL6ue7mAYHyr9",
+    price:       14.95,
+    description: "Tater Tots, Classic Gravy, Quebec Cheese Curds, Chives",
+    requirements: {
+      fries:     false,
       curds:     false,
       gravy:     true
     }
