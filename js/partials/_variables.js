@@ -377,6 +377,23 @@ const crimes = [
   },
 
   {
+    name: "Corned Beef Poutine",
+    place: "BlackFriar Pub",
+    pic: "blackfriar.jpg",
+    city: "Dallas",
+    state: "TX",
+    country: "US",
+    map: "https://goo.gl/maps/YJrSQ37v1tU3txVCA",
+    price: 17.75,
+    description: "corned beef, white cheddar, gravy, french fries",
+    requirements: {
+      fries: true,
+      curds: false,
+      gravy: true
+    } 
+  },
+
+  {
     name:        "Poutine",
     place:       "Blue Bear",
     pic:         "bluebear-swiss.jpg",

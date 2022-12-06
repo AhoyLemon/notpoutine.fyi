@@ -92,7 +92,7 @@ var app = new Vue({
     // Scroll the the appropriate crime, if any.
     let queryParams = new URLSearchParams(window.location.search);
     if (queryParams.get("place")) {
-      const crimePlace = queryParams.get("place");
+      const crimePlace = decodeURI(queryParams.get("place"));
       document.querySelector('[crime-place="'+crimePlace+'"]').scrollIntoView();
     } else if (queryParams.get("name")) {
       const crimeName = queryParams.get("name");

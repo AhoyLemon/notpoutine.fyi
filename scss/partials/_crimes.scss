@@ -33,7 +33,7 @@ $cardsize: 420px;
         li.yes { 
           &:before { content: '✔️'; padding-right: 0.5em;}
         }
-        li.no { 
+        li.no { cursor: help;
           &:before { content: '❌'; padding-right: 0.5em; text-decoration: none; }
         }
       }

@@ -8,7 +8,7 @@
     <link href="css/site.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="a running collection of menu items which claim to be poutine, but aren't.">
-    <meta http-equiv="last-modified" content="2022-12-01T03:24:48.007Z">
+    <meta http-equiv="last-modified" content="2022-12-06T22:53:14.295Z">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
@@ -61,11 +61,11 @@
               </div>
               <ul class="requirements">
                 <li class="yes" v-if="crime.requirements.fries">fries</li>
-                <li class="no" v-if="!crime.requirements.fries"> <abbr title="poutine must have french fries (not tots or potato wedges)">fries</abbr></li>
+                <li class="no" v-if="!crime.requirements.fries" title="poutine must have french fries (not tots or potato wedges)"> <span>fries</span></li>
                 <li class="yes" v-if="crime.requirements.curds">curds</li>
-                <li class="no" v-if="!crime.requirements.curds"> <abbr title="poutine must have fresh (not fried) cheese curds">curds</abbr></li>
+                <li class="no" v-if="!crime.requirements.curds" title="poutine must have fresh (not fried) cheese curds"> <span>curds</span></li>
                 <li class="yes" v-if="crime.requirements.gravy">gravy</li>
-                <li class="no" v-if="!crime.requirements.gravy"> <abbr title="poutine must have brown gravy">gravy</abbr></li>
+                <li class="no" v-if="!crime.requirements.gravy" title="poutine must have brown gravy"> <span>gravy</span></li>
               </ul>
             </div>
             <div class="location">
@@ -144,7 +144,7 @@
         const testing = false;
         
       </script>
-      <script src="js/min/site.min.js?updated2022-12-01T03:24:48.007Z"></script>
+      <script src="js/min/site.min.js?updated2022-12-06T22:53:14.295Z"></script>
       <!-- Global site tag (gtag.js) - Google Analytics-->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15129990-34"></script>
       <script>
